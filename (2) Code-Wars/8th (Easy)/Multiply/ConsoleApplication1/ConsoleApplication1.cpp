@@ -1,0 +1,17 @@
+#include <iostream> 
+#include <string>
+using namespace std;
+
+
+
+int multiply(int a, int b)
+{
+	return a * b;
+}
+
+int main() {
+
+	cout << multiply(2, 3) << endl;
+	
+	return 0;
+}
