@@ -1,0 +1,1 @@
+const getMax1 = getMax2 = () => ({name: 'Max Headroom'});
