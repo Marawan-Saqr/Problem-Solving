@@ -1,0 +1,4 @@
+﻿  Assignment1.cpp
+D:\My Career\Tracks & Courses\Web Development\Problem Solving\(2) Code-Wars\8th (Easy)\Finish Guess the Number Game\Project\Assignment1\Assignment1.cpp(36,5): error C2065: 'cout': undeclared identifier
+D:\My Career\Tracks & Courses\Web Development\Problem Solving\(2) Code-Wars\8th (Easy)\Finish Guess the Number Game\Project\Assignment1\Assignment1.cpp(36,20): warning C4804: '<<': unsafe use of type 'bool' in operation
+D:\My Career\Tracks & Courses\Web Development\Problem Solving\(2) Code-Wars\8th (Easy)\Finish Guess the Number Game\Project\Assignment1\Assignment1.cpp(36,28): error C2065: 'endl': undeclared identifier

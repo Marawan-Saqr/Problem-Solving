@@ -1,0 +1,5 @@
+﻿  Assignment1.cpp
+C:\Users\Marawan\Desktop\New folder\New folder - Copy (4)\Project\Assignment1\Assignment1.cpp(15,75): error C2572: 'howManyDalmatians': redefinition of default argument: parameter 1
+  C:\Users\Marawan\Desktop\New folder\New folder - Copy (4)\Project\Assignment1\Assignment1.cpp(6,13):
+  see declaration of 'howManyDalmatians'
+  

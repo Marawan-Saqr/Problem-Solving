@@ -1,6 +1,14 @@
 #include <iostream>
 using namespace std;
 
+int quarter_of(int month);
+
+int main() {
+
+	cout << quarter_of(12) << endl;	
+	return 0;
+}
+
 
 int quarter_of(int month) {
 	if (month >= 1 && month < 4) {
@@ -15,13 +23,4 @@ int quarter_of(int month) {
 	else if (month >= 10 && month <= 12) {
 		return 4;
 	}
-}
-
-int main() {
-
-
-	
-	cout << quarter_of(12) << endl;
-	
-	return 0;
 }

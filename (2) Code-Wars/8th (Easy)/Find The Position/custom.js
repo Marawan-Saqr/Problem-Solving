@@ -6,21 +6,4 @@ function position(letter) {
   }
 }
 
-
-
 console.log(position("a"));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

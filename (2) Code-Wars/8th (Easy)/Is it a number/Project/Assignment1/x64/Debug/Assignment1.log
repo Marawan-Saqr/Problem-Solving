@@ -1,2 +1,3 @@
 ﻿  Assignment1.cpp
-  Assignment1.vcxproj -> C:\Users\Marawan\Desktop\Is it a number\Project\x64\Debug\Assignment1.exe
+D:\My Career\Tracks & Courses\Web Development\Problem Solving\(2) Code-Wars\8th (Easy)\Is it a number\Project\Assignment1\Assignment1.cpp(10,28): error C2143: syntax error: missing ':' before '...'
+D:\My Career\Tracks & Courses\Web Development\Problem Solving\(2) Code-Wars\8th (Easy)\Is it a number\Project\Assignment1\Assignment1.cpp(10,28): error C2059: syntax error: '...'

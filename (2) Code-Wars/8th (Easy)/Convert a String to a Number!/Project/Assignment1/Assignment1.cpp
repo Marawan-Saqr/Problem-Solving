@@ -1,21 +1,20 @@
 #include <iostream>
-#include <vector>
+#include <string>
 using namespace std;
 
-int grow(vector<int> nums);
+int string_to_number(const std::string& s);
 
 int main() {
 
-	vector<int> arrayOfNumbers = { 1, 2, 3, 4 };
-	cout << grow(arrayOfNumbers) << endl;
+	cout << string_to_number("1234") << endl;
 
 	return 0;
 }
 
-int grow(vector<int> nums) {
-	int result = 1;
-	for (int i = 0; i < nums.size(); i++) {
-		result *= nums[i];
+int string_to_number(const std::string& s) {
+	int result = 0;
+	for (int i = 0; i < s.length(); i++) {
+		result = stoi(s);
 	}
 	return result;
 }

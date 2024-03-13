@@ -1,0 +1,7 @@
+﻿  Assignment1.cpp
+D:\My Career\Tracks & Courses\Web Development\Problem Solving\(2) Code-Wars\8th (Easy)\To square(root) or not to square(root)\Project\Assignment1\Assignment1.cpp(26,30): warning C4244: 'argument': conversion from 'double' to '_Ty', possible loss of data
+D:\My Career\Tracks & Courses\Web Development\Problem Solving\(2) Code-Wars\8th (Easy)\To square(root) or not to square(root)\Project\Assignment1\Assignment1.cpp(26,30): warning C4244:         with
+D:\My Career\Tracks & Courses\Web Development\Problem Solving\(2) Code-Wars\8th (Easy)\To square(root) or not to square(root)\Project\Assignment1\Assignment1.cpp(26,30): warning C4244:         [
+D:\My Career\Tracks & Courses\Web Development\Problem Solving\(2) Code-Wars\8th (Easy)\To square(root) or not to square(root)\Project\Assignment1\Assignment1.cpp(26,30): warning C4244:             _Ty=int
+D:\My Career\Tracks & Courses\Web Development\Problem Solving\(2) Code-Wars\8th (Easy)\To square(root) or not to square(root)\Project\Assignment1\Assignment1.cpp(26,30): warning C4244:         ]
+  Assignment1.vcxproj -> D:\My Career\Tracks & Courses\Web Development\Problem Solving\(2) Code-Wars\8th (Easy)\To square(root) or not to square(root)\Project\x64\Debug\Assignment1.exe

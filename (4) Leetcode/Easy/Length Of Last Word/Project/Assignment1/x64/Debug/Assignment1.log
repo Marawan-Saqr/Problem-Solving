@@ -1,0 +1,5 @@
+﻿  Assignment1.cpp
+D:\My Career\Tracks & Courses\Web Development\Problem Solving\(4) Leetcode\Easy\Length Of Last Word\Project\Assignment1\Assignment1.cpp(16,18): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+D:\My Career\Tracks & Courses\Web Development\Problem Solving\(4) Leetcode\Easy\Length Of Last Word\Project\Assignment1\Assignment1.cpp(15,15): warning C4101: 'k': unreferenced local variable
+D:\My Career\Tracks & Courses\Web Development\Problem Solving\(4) Leetcode\Easy\Length Of Last Word\Project\Assignment1\Assignment1.cpp(15,12): warning C4101: 'j': unreferenced local variable
+  Assignment1.vcxproj -> D:\My Career\Tracks & Courses\Web Development\Problem Solving\(4) Leetcode\Easy\Length Of Last Word\Project\x64\Debug\Assignment1.exe

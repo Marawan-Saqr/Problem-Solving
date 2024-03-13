@@ -1,0 +1,42 @@
+﻿  Assignment1.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\algorithm(7928,17): error C3892: '_First': you cannot assign to a variable that is const
+  (compiling source file 'Assignment1.cpp')
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\algorithm(7928,17):
+  the template instantiation context (the oldest one first) is
+  	C:\Users\Marawan\Desktop\New folder\Sum of differences in array\Sum of differences in array\Assignment1\Assignment1.cpp(18,2):
+  	see reference to function template instantiation 'void std::sort<std::reverse_iterator<std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<_Ty>>>>>(const _RanIt,const _RanIt)' being compiled
+          with
+          [
+              _Ty=int,
+              _RanIt=std::reverse_iterator<std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<int>>>>
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\algorithm(8086,10):
+  	see reference to function template instantiation 'void std::sort<_RanIt,std::less<void>>(const _RanIt,const _RanIt,_Pr)' being compiled
+          with
+          [
+              _RanIt=std::reverse_iterator<std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<int>>>>,
+              _Pr=std::less<void>
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\algorithm(8081,5):
+  	see reference to function template instantiation 'void std::_Sort_unchecked<std::reverse_iterator<const int *>,_Fn>(_RanIt,_RanIt,__int64,_Pr)' being compiled
+          with
+          [
+              _Fn=std::less<void>,
+              _RanIt=std::reverse_iterator<const int *>,
+              _Pr=std::less<void>
+          ]
+  	C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\algorithm(8051,13):
+  	see reference to function template instantiation '_BidIt std::_Insertion_sort_unchecked<_RanIt,_Pr>(const _BidIt,const _BidIt,_Pr)' being compiled
+          with
+          [
+              _BidIt=std::reverse_iterator<const int *>,
+              _RanIt=std::reverse_iterator<const int *>,
+              _Pr=std::less<void>
+          ]
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\algorithm(7931,21): error C3892: '_Hole': you cannot assign to a variable that is const
+  (compiling source file 'Assignment1.cpp')
+  
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\algorithm(7934,17): error C3892: '_Hole': you cannot assign to a variable that is const
+  (compiling source file 'Assignment1.cpp')
+  

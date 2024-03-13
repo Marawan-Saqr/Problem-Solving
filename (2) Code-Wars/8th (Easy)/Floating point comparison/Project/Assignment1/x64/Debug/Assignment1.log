@@ -1,0 +1,4 @@
+﻿  Assignment1.cpp
+D:\My Career\Tracks & Courses\Web Development\Problem Solving\(2) Code-Wars\8th (Easy)\New folder\Project\Assignment1\Assignment1.cpp(15,15): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+D:\My Career\Tracks & Courses\Web Development\Problem Solving\(2) Code-Wars\8th (Easy)\New folder\Project\Assignment1\Assignment1.cpp(16,16): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+  Assignment1.vcxproj -> D:\My Career\Tracks & Courses\Web Development\Problem Solving\(2) Code-Wars\8th (Easy)\New folder\Project\x64\Debug\Assignment1.exe
