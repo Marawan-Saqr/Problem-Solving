@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\My Career\\Tracks \u0026 Courses\\Web Development\\Problem Solving\\(2) Code-Wars\\8th (Easy)\\Pythagorean Triple\\Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{667CD02B-2F4C-4BFA-B16A-7CCC11AB974C}|ConsoleApplication1\\ConsoleApplication1.vcxproj|D:\\My Career\\Tracks \u0026 Courses\\Web Development\\Problem Solving\\(2) Code-Wars\\8th (Easy)\\Pythagorean Triple\\Project\\ConsoleApplication1\\ConsoleApplication1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{667CD02B-2F4C-4BFA-B16A-7CCC11AB974C}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\ConsoleApplication1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConsoleApplication1.cpp",
+              "DocumentMoniker": "D:\\My Career\\Tracks \u0026 Courses\\Web Development\\Problem Solving\\(2) Code-Wars\\8th (Easy)\\Pythagorean Triple\\Project\\ConsoleApplication1\\ConsoleApplication1.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\ConsoleApplication1.cpp",
+              "ToolTip": "D:\\My Career\\Tracks \u0026 Courses\\Web Development\\Problem Solving\\(2) Code-Wars\\8th (Easy)\\Pythagorean Triple\\Project\\ConsoleApplication1\\ConsoleApplication1.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\ConsoleApplication1.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-02T17:21:26.562Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
