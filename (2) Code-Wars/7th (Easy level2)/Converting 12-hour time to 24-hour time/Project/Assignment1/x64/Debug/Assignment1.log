@@ -1,0 +1,3 @@
+﻿  Assignment1.cpp
+Assignment1.obj : error LNK2019: unresolved external symbol "class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __cdecl highAndLow(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?highAndLow@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AEBV12@@Z) referenced in function main
+D:\My Career\Tracks & Courses\Web Development\Problem Solving\(2) Code-Wars\7th (Easy level2)\Highest and Lowest\Project\x64\Debug\Assignment1.exe : fatal error LNK1120: 1 unresolved externals
