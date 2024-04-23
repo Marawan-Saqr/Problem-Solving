@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\My Career\\Tracks \u0026 Courses\\Web Development\\Problem Solving\\(2) Code-Wars\\7th (Easy level2)\\Sum of integers in string\\Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5BC03A1D-8A7F-409F-ACEE-B6F04DCF48D0}|Assignment1\\Assignment1.vcxproj|D:\\My Career\\Tracks \u0026 Courses\\Web Development\\Problem Solving\\(2) Code-Wars\\7th (Easy level2)\\Sum of integers in string\\Project\\Assignment1\\Assignment1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5BC03A1D-8A7F-409F-ACEE-B6F04DCF48D0}|Assignment1\\Assignment1.vcxproj|solutionrelative:Assignment1\\Assignment1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Assignment1.cpp",
+              "DocumentMoniker": "D:\\My Career\\Tracks \u0026 Courses\\Web Development\\Problem Solving\\(2) Code-Wars\\7th (Easy level2)\\Sum of integers in string\\Project\\Assignment1\\Assignment1.cpp",
+              "RelativeDocumentMoniker": "Assignment1\\Assignment1.cpp",
+              "ToolTip": "D:\\My Career\\Tracks \u0026 Courses\\Web Development\\Problem Solving\\(2) Code-Wars\\7th (Easy level2)\\Sum of integers in string\\Project\\Assignment1\\Assignment1.cpp",
+              "RelativeToolTip": "Assignment1\\Assignment1.cpp",
+              "ViewState": "AQIAABEAAAAAAAAAAAAYwBwAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-22T15:58:31.71Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
