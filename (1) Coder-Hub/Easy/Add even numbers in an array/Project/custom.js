@@ -1,5 +1,4 @@
 function sum_even(arr) {
-  
 
   let result = 0;
 

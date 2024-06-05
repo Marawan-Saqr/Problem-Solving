@@ -3,24 +3,3 @@ function get_mean(arr) {
 }
 
 console.log(get_mean([4, 1]));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

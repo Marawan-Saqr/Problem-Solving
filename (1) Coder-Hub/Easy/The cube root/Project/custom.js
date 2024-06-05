@@ -2,6 +2,4 @@ function cubicRoot(num) {
   return Math.cbrt(num);
 }
 
-console.log(cubicRoot(8));
-
-
+console.log(cubicRoot(16));

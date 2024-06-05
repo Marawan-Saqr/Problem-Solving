@@ -13,19 +13,4 @@ function operation(num1, num2) {
 }
 
 
-
-
 console.log(operation(3, 8));
-
-
-
-
-
-
-
-
-
-
-
-
-
