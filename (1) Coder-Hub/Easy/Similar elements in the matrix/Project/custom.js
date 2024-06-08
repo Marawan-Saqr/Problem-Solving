@@ -10,11 +10,4 @@ function cumulative_addition(elements_array) {
 
 
 
-console.log(cumulative_addition([5,1,2,4,9,10,200]));
-
-
-
-
-
-
-
+console.log(cumulative_addition([5, 1, 2, 4, 9, 10, 200]));

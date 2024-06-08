@@ -1,6 +1,6 @@
 function isMirrored(num) {
 
-  let str = num.toString(); // "112"
+  let str = num.toString();
 
   let splited = str.split("").reverse().join("");
 
