@@ -10,17 +10,4 @@ function peopleWithAgeDrink(old) {
   }
 }
 
-
-
-
 console.log(peopleWithAgeDrink(17));
-
-
-
-
-
-
-
-
-
-
