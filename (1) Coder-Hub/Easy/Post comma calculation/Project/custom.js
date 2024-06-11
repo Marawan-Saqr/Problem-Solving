@@ -16,3 +16,17 @@ function Decimal_places(num) {
 
 
 console.log(Decimal_places("3.967"));
+
+///////////////////////////////////////////////////////////////////////////////
+
+// Another Solution
+
+function Decimal_places(num) {
+  const numberAsString = num.toString();
+  if (numberAsString.includes('.')) { 
+    return numberAsString.split('.')[1].length;
+  }
+  return 0;
+}
+
+console.log(Decimal_places("3.967"));

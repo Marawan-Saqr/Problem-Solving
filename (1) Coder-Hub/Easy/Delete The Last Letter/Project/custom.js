@@ -1,13 +1,15 @@
 function deleteLastChar(word) {
-  let newWord = "";
+
+  let result = "";
 
   for (let i = 0; i < word.length; i++) {
     if (i !== word.length - 1) {
-      newWord += word[i];
+      result += word[i];
     }
   }
 
-  return newWord;
+  return result;
+
 }
 
-console.log(deleteLastChar("Coderhub"));
+console.log(deleteLastChar("CoderHub"));
