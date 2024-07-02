@@ -1,5 +1,4 @@
 function reverseWords(str) {
-
   let result = [];
   let splited = str.split(" ");
   for (let i = 0; i < splited.length; i++) {
@@ -7,7 +6,6 @@ function reverseWords(str) {
     result.push(reversed);
   }
   return result.join(" ");
-
 }
 
 console.log(reverseWords("This is an example!"));

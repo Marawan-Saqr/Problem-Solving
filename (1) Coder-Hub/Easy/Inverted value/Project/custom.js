@@ -12,4 +12,4 @@ function isMirrored(num) {
 
 }
 
-console.log(isMirrored(112));
+console.log(isMirrored(121));
