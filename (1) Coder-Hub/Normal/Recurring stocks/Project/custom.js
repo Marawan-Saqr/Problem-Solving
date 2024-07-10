@@ -1,14 +1,18 @@
 function arrowDuplicates(word) {
-  let empty = "";
-  let lowerCase = word.toLowerCase();
-  for (let i = 0; i < word.length; i++) {
-    if (lowerCase.indexOf(lowerCase[i]) === lowerCase.lastIndexOf(lowerCase[i])) {
-      empty += ">";
+
+  let result = "";
+  let smallChar = word.toLowerCase();
+
+  for (let i = 0; i < smallChar.length; i++) {
+    if (smallChar.indexOf(smallChar[i]) === smallChar.lastIndexOf(smallChar[i])) {
+      result += ">";
     } else {
-      empty += "<";
+      result += "<";
     }
   }
-  return empty;
+
+  return result;
+
 }
 
 
