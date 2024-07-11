@@ -1,16 +1,13 @@
 function removeExclamationMarks(s) {
 
-  let result = "";
-
+  let newResult = "";
   for (let i = 0; i < s.length; i++) {
-    if (s[i] === "!") {
-      continue;
-    } else {
-      result += s[i];
+    if (s[i] !== "!") {
+      newResult += s[i];
     }
   }
 
-  return result;
+  return newResult;
 
 }
 
