@@ -1,10 +1,10 @@
 function pipeFix(numbers){
 
   let newArray = [];
-  let min = Math.min(...numbers);
-  let max = Math.max(...numbers);
+  let minNumber = Math.min(...numbers);
+  let maxNumber = Math.max(...numbers);
 
-  for (let i = min; i <= max; i++) {
+  for (let i = minNumber; i <= maxNumber; i++ ) {
     newArray.push(i);
   }
 

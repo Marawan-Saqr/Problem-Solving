@@ -5,13 +5,14 @@ function findAverage(array) {
   }
 
   let result = 0;
+  let arrayLength = array.length;
 
   for (let i = 0; i < array.length; i++) {
     result += array[i];
   }
 
-  return result / array.length;
+  return result / arrayLength;
 
 }
 
-console.log(findAverage([1, 2, 3]));
+console.log(findAverage([1, 1, 1]));
