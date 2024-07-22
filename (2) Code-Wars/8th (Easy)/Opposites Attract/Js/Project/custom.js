@@ -6,5 +6,4 @@ function lovefunc(flower1, flower2){
   }
 }
 
-
-console.log(lovefunc(2, 2));
+console.log(lovefunc());
