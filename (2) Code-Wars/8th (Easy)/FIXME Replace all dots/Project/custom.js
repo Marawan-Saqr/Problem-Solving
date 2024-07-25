@@ -1,15 +1,15 @@
 var replaceDots = function(str) {
-  let newStr = '';
+  let result = "";
 
   for (let i = 0; i < str.length; i++) {
     if (str[i] === ".") {
-      newStr += "-";
+      result += "-";
     } else {
-      newStr += str[i];
+      result += str[i];
     }
   }
 
-  return newStr;
+  return result;
 }
 
 console.log(replaceDots("one.two.three"));

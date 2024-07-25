@@ -1,8 +1,8 @@
 function getAge(inputString){
 
-  let splited = inputString.split(" ");
-  let convertToNumber = parseInt(splited);
-  return convertToNumber;
+  let convertAge = parseInt(inputString);
+
+  return convertAge;
 
 }
 
