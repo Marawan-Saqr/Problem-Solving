@@ -1,11 +1,13 @@
 function twoSort(s) {
 
-  let result = "";
   let sorted = s.sort();
-  let firstElement = sorted[0];
+  let firstElement = s[0];
+  let splited = firstElement.split("");
+  let result = "";
 
-  for (let i = 0; i < firstElement.length; i++) {
-    result += `${firstElement[i]}***`;
+
+  for (let i = 0; i < splited.length; i++) {
+    result += `${splited[i]}***`
   }
 
   result = result.slice(0, -3);

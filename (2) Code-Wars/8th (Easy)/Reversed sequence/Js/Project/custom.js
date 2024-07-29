@@ -1,12 +1,12 @@
 const reverseSeq = n => {
 
-  let newArray = [];
+  let result = [];
 
   for (let i = n; i > 0; i--) {
-    newArray.push(i);
+    result.push(i);
   }
 
-  return newArray;
+  return result;
 
 }
 

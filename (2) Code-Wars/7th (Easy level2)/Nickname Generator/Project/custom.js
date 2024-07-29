@@ -18,4 +18,4 @@ function nicknameGenerator(name){
 
 }
 
-console.log(nicknameGenerator("mar"));
+console.log(nicknameGenerator("Melissa"));
