@@ -1,15 +1,15 @@
 function digitize(n) {
 
-  let convertString = n.toString(); // "35231"
-  let splitedString = convertString.split("");
-  let reversedString = splitedString.reverse();
-  
-  let newArray = [];
-  for (let i = 0; i < reversedString.length; i++) {
-    newArray.push(parseInt(reversedString[i]));
+  let convertToString = n.toString();
+  let splited = convertToString.split("");
+  splited.reverse();
+  let newResult = [];
+
+  for (let i = 0; i < splited.length; i++) {
+    newResult.push(parseInt(splited[i]));
   }
 
-  return newArray;
+  return newResult;
 
 }
 

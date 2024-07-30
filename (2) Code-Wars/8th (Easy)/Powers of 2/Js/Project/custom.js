@@ -1,13 +1,13 @@
-function powersOfTwo(n) {
+function powersOfTwo(n){
 
-  let newArray = [];
+  let result = [];
 
   for (let i = 0; i <= n; i++) {
-    newArray.push(Math.pow(2, i));
+    result.push(Math.pow(2, i));
   }
 
-  return newArray;
+  return result;
 
 }
 
-console.log(powersOfTwo(1));
+console.log(powersOfTwo(4));

@@ -1,18 +1,17 @@
 function isPalindrome(x) {
 
-  let normalResult = "";
+  let firstResult = "";
+  let secondResult = "";
 
   for (let i = 0; i < x.length; i++) {
-    normalResult += x[i].toUpperCase();
+    firstResult += x[i].toLowerCase();
   }
 
-  let reversedResult = "";
-
-  for (let j = x.length - 1; j >= 0; j--) {
-    reversedResult += x[j].toUpperCase();
+  for (let i = x.length - 1; i >= 0; i--) {
+    secondResult += x[i].toLowerCase();
   }
 
-  if (normalResult === reversedResult) {
+  if (firstResult === secondResult) {
     return true;
   } else {
     return false;
@@ -20,4 +19,5 @@ function isPalindrome(x) {
 
 }
 
-console.log(isPalindrome("Abba"));
+
+console.log(isPalindrome("Aba"));
