@@ -4,13 +4,13 @@ function sum(numbers) {
     return 0;
   }
 
-  let result = 0;
+  let sum = 0;
 
   for (let i = 0; i < numbers.length; i++) {
-    result += numbers[i];
+    sum += numbers[i];
   }
 
-  return result;
+  return sum;
 
 }
 
