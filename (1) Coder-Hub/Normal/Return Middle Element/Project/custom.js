@@ -1,13 +1,14 @@
 function middle_char(word) {
-  let len = word.length;
-  let mid = Math.floor(len / 2);
 
-  if (len % 2 !== 0) {
-    return word[mid];
+  let lengthOfWord = word.length; // 4
+  let midChar = Math.floor(lengthOfWord / 2);
+
+  if (lengthOfWord % 2 === 0) {
+    return word[midChar - 1] + word[midChar];
   } else {
-    return word[mid - 1] + word[mid];
+    return word[midChar];
   }
+
 }
 
 console.log(middle_char("salem"));
-console.log(middle_char("Yassmina"));
