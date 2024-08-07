@@ -2,7 +2,7 @@ function getNumberFromString(s) {
 
   let numbers = s.match(/\d+/g);
 
-  return numbers.join("");
+  return parseInt(numbers.join(""));
 
 }
 
