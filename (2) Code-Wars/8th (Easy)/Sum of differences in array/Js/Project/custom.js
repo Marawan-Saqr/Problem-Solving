@@ -15,4 +15,4 @@ function sumOfDifferences(arr) {
 
 }
 
-console.log(sumOfDifferences([2, 1, 10]));
+console.log(sumOfDifferences([1, 2, 10]));
