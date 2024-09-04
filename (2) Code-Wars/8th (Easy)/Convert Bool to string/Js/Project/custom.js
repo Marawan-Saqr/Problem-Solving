@@ -1,7 +1,7 @@
 function booleanToString(b){
 
   if (b === true) {
-    return `${b}`
+    return `${b}`;
   } else {
     return `${b}`;
   }

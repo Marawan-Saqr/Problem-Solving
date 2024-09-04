@@ -5,7 +5,6 @@ function add_five(arr) {
     newResult.push(`${arr[i]}5`);
   }
 
-
   return newResult;
 
 }
