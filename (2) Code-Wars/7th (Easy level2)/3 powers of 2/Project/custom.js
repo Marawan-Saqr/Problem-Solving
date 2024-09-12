@@ -3,4 +3,4 @@ function threePowers(n) {
 }
 
 
-console.log(threePowers(2));   // False
+console.log(threePowers(2));

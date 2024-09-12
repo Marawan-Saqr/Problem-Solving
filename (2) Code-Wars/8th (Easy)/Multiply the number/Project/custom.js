@@ -3,4 +3,4 @@ function multiply(number){
   return number * Math.pow(5, numberDigits);
 }
 
-console.log(multiply(-2));
+console.log(multiply(-3));

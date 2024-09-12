@@ -2,4 +2,4 @@ var templateStrings = function(noun, adjective) {
   return `${noun} are ${adjective}`;
 }
 
-console.log(templateStrings());
+console.log(templateStrings("animals", "good"));

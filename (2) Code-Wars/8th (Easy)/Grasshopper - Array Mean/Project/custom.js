@@ -1,6 +1,7 @@
-var findAverage = function(nums) {
+var findAverage = function (nums) {
 
   let result = 0;
+
   for (let i = 0; i < nums.length; i++) {
     result += nums[i];
   }
@@ -9,4 +10,4 @@ var findAverage = function(nums) {
 
 }
 
-console.log(findAverage(1, 3, 5, 7));
+console.log(findAverage([1, 3, 5, 7]));

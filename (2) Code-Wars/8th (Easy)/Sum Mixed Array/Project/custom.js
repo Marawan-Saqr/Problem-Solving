@@ -1,13 +1,14 @@
 function sumMix(x){
 
+  let convertedValue = [];
   let result = 0;
 
   for (let i = 0; i < x.length; i++) {
-    if (typeof x[i] === "number") {
-      result += x[i];
-    } else {
-      result += parseInt(x[i]);
-    }
+    convertedValue.push(parseInt(x[i]));
+  }
+
+  for (let j = 0; j < convertedValue.length; j++) {
+    result += convertedValue[j];
   }
 
   return result;

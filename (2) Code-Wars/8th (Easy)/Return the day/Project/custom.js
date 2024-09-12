@@ -1,6 +1,6 @@
 function whatday(num) { 
 
-  switch(num) {
+  switch (num) {
     case 1:
       return "Sunday";
     case 2:
@@ -21,4 +21,4 @@ function whatday(num) {
 
 }
 
-console.log(whatday(4));
+console.log(whatday(1));

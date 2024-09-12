@@ -1,22 +1,21 @@
 function well(x){
 
-  let newArray = [];
+  let result = [];
+
   for (let i = 0; i < x.length; i++) {
     if (x[i] === "good") {
-      newArray.push(x[i]);
+      result.push(x[i]);
     }
   }
 
-  if (newArray.length === 1 || newArray.length === 2 ) {
+  if (result.length <= 2 && result.length !== 0) {
     return "Publish!";
-  } else if (newArray.length > 2) {
+  } else if (result.length > 2) {
     return "I smell a series!";
-  } else {
+  } else if (result.length === 0) {
     return "Fail!";
   }
 
-} 
+}
 
-
-
-console.log(well(['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good']));
+console.log(well(['good', 'bad', 'bad', 'bad', 'bad']));
