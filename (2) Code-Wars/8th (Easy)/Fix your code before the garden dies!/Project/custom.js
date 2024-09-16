@@ -6,4 +6,4 @@ function rainAmount(rainAmount) {
   }
 }
 
-console.log(rainAmount(100));
+console.log(rainAmount(40));
