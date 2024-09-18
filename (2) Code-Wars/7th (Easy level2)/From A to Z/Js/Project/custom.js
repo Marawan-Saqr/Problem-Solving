@@ -1,16 +1,21 @@
 function gimmeTheLetters(sp) {
 
-  let splited = sp.split(""); // ['a', '-', 'z']
-  let firstElement = splited[0].charCodeAt(0);
-  let lastElement = splited[splited.length - 1].charCodeAt(0);
+  let splited = sp.split("");
   let result = [];
 
-  for (let i = firstElement; i <= lastElement; i++) {
-    result.push(String.fromCharCode(i));
+  let firstAsciiValue = splited[0].charCodeAt(0);
+  let secondAsciiValue = splited[splited.length - 1].charCodeAt(0);
+
+  for (let i = firstAsciiValue; i <= secondAsciiValue; i++) {
+    result.push(i);
   }
 
-  return result.join("");
+  let charArray = [];
+  for (let j = 0; j < result.length; j++) {
+    charArray.push(String.fromCharCode(result[j]));
+  }
 
+  return charArray.join("");
 
 }
 

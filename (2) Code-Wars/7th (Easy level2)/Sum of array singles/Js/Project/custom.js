@@ -9,7 +9,6 @@ function repeats(arr) {
     }
   }
 
-  // Sum the numbers in the set
   let sum = 0;
   for (const num of uniqueNumbers) {
     sum += num;
