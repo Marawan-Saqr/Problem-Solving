@@ -1,14 +1,14 @@
-function solve(arr) {
-  let result = [];
-  const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  let allUpper = arr.map(word => word.toUpperCase());
+function solve(arr){  
+
+  let alphabet = "abcdefghijklmnopqrstuvwxyz";
+  let lowering = arr.map(word => word.toLowerCase());
   let counter = 0;
+  let result = [];
 
-
-  for (let i = 0; i < allUpper.length; i++) {
+  for (let i = 0; i < lowering.length; i++) {
     counter = 0;
-    for (let j = 0; j < allUpper[i].length; j++) {
-      if (alphabet[j] === allUpper[i][j]) {
+    for (let j = 0; j < lowering[i].length; j++) {
+      if (alphabet[j] === lowering[i][j]) {
         counter++;
       }
     }
@@ -16,6 +16,7 @@ function solve(arr) {
   }
 
   return result;
+
 }
 
 console.log(solve(["abode", "ABc", "xyzD"]));

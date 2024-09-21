@@ -1,15 +1,16 @@
 function elementsSum(arr, d = 0) {
 
-  var sum=0;
+  let result = 0;
 
-  for (var i = 0; i < arr.length; ++i)
+  for (let i = 0; i < arr.length; i++) {
     if (arr[i].length >= arr.length - i) {
-      sum += arr[i][arr.length - i - 1];
+      result += arr[i][arr.length - i - 1];
     } else {
-      sum += d;
+      result += d;
     }
+  }
 
-  return sum;
+  return result;
 
 }
 
