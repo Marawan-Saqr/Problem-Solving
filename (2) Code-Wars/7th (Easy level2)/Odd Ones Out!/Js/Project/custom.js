@@ -1,19 +1,20 @@
 function oddOnesOut(nums) {
 
-  let counts = {};
-  for (let num of nums) {
-    counts[num] = (counts[num] || 0) + 1;
-  }
-
   let result = [];
-  for (let num of nums) {
-    if (counts[num] % 2 === 0) {
-      result.push(num);
+
+  for (let i = 0; i < nums.length; i++) {
+    let count = 0;
+    for (var j = 0; j < nums.length; j++) {
+      if (nums[i] === nums[j]) {
+        count++;
+      }
+    }
+    if (count % 2 === 0) {
+      result.push(nums[i]);
     }
   }
-
   return result;
 
 }
 
-console.log(oddOnesOut([1, 1, 2, 2, 3, 3, 3]));
+console.log(oddOnesOut([1, 2, 3, 1, 3, 3]));
