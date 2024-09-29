@@ -1,7 +1,9 @@
 function solve(st, a, b){
 
-  let str = st.substr(a, b - a + 1).split('').reverse().join('');
-  return st.slice(0, a) + str + st.substr(b + 1);
+  let newString = st.substring(a, b + 1).split("").reverse().join("");
+  let result = st.substring(0, a) + newString + st.substring(b + 1);
+
+  return result;
 
 }
 
