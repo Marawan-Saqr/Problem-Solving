@@ -1,17 +1,16 @@
-function solve(str) {
+function doubles(s) {
 
-  let result = "";
-  for (let i = str.length - 1; i >= 0; i--) {
-    if (str[i] != ' ') {
-      result += str[i];
-    }
+  let result = [];
 
-    if (str[result.length] === ' ') {
-      result += ' ';
+  for (let i = 0; i < s.length; i++) {
+    if (result[result.length - 1] === s[i]) {
+      result.pop();
+    } else {
+      result.push(s[i]);
     }
   }
 
-  return result;
+  return result.join('');
 }
 
-console.log(solve("our code"));
+console.log(doubles('abbcccdddda'));
