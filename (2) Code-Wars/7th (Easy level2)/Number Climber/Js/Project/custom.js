@@ -1,4 +1,4 @@
-function climb(n){
+function climb(n) {
 
   let result = [];
 
