@@ -1,11 +1,12 @@
-function solution(str, ending){
+function solution(str, ending) {
 
   if (str.endsWith(ending)) {
     return true;
-  } else {
-    return false;
   }
+
+  return false;
 
 }
 
-console.log(solution("abc", "bc"));
+
+console.log(solution("abcde", "cde"));
