@@ -16,4 +16,4 @@ function arrowDuplicates(word) {
 }
 
 
-console.log(arrowDuplicates("Bb")); 
+console.log(arrowDuplicates("Bss"));
