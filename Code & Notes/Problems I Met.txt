@@ -1,0 +1,2 @@
+1-Remove Duplicates From Array.
+2-Find Multiplied Of Number.
