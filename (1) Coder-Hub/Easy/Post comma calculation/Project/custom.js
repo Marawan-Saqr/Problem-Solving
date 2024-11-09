@@ -1,6 +1,6 @@
-function Decimal_places(num) {
+function Decimal_places(num) {   // Chatgbt Solution
   
-  let splited = num.split(""); // ["3", ".", "9", "6", "7"]
+  let splited = num.split("");
   let counter = 0;
 
   for (let i = splited.length - 1; i >= 0; i--) {
@@ -20,3 +20,26 @@ function Decimal_places(num) {
 }
 
 console.log(Decimal_places("2.9"));
+
+////////////////////////////Another Solution///////////////////////////////////
+
+function Decimal_places(num) {   // My Solution
+
+  let splited = num.toString().split("");
+
+  if (!splited.includes(".")) {
+    return 0;
+  }
+
+  let counter = 0;
+  for (let i = splited.length - 1; i > 0; i--) {
+    if (splited[i] !== ".") {
+      counter++;
+    }
+  }
+
+  return counter;
+
+}
+
+console.log(Decimal_places("2.9843"));
