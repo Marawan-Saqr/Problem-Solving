@@ -1,3 +1,5 @@
 1-Remove Duplicates From Array.
 2-Find Multiplied Of Number.
-3-Two Lowest Nums In Matrix.
+3-Two Lowest Numbers In Matrix.
+4-Longest Repeat.
+5-Prime Number.
