@@ -1,12 +1,15 @@
 function reverseWords(str) {
 
-  let result = "";
-  for (let i = str.length - 1; i >= 0; i--) {
-    result += str[i];
+  let splited = str.split(" ");
+
+  let result = [];
+  for (let i = 0; i < splited.length; i++) {
+    result.push(splited[i].split("").reverse().join(""));
   }
 
-  return result.split(" ").reverse().join(" ");
+  return result.join(" ");
 
 }
+
 
 console.log(reverseWords("This is an example!"));
