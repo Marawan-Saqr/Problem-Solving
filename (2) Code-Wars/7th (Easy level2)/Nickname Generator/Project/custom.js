@@ -1,21 +1,22 @@
 function nicknameGenerator(name){
 
-  if (name.length < 4) {
+  if (name.length <= 3) {
     return "Error: Name too short";
   }
 
-  let vowelsArray = ["a", "A", "E", "e", "I", "i", "O", "o", "U", "u"];
+  let vowelsChar = "aeiou";
+  let checkVowel = name[2];
+
   let result = "";
-
-  if (vowelsArray.includes(name[2])) {
-    result = `${name[0]}${name[1]}${name[2]}${name[3]}`;
+  if (vowelsChar.includes(checkVowel)) {
+    result += name.slice(0, 4)
   } else {
-    result = `${name[0]}${name[1]}${name[2]}`;
+    result += name.slice(0, 3);
   }
-
 
   return result;
 
 }
 
-console.log(nicknameGenerator("Melissa"));
+
+console.log(nicknameGenerator("Douglas"));
