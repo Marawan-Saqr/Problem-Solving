@@ -1,9 +1,14 @@
 function unique(arr) {
-  let result = arr.filter(function(element) {
-    return arr.indexOf(element) === arr.lastIndexOf(element);
-  });
+
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr.indexOf(arr[i] === arr.lastIndexOf(arr[i]))) {
+      result.push(arr[i]);
+    }
+  }
 
   return result;
+
 }
 
 console.log(unique([2, 4, -2]));
