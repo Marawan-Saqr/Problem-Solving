@@ -1,6 +1,6 @@
 function middle_char(word) {
 
-  let lengthOfWord = word.length; // 4
+  let lengthOfWord = word.length;
   let midChar = Math.floor(lengthOfWord / 2);
 
   if (lengthOfWord % 2 === 0) {
@@ -11,4 +11,4 @@ function middle_char(word) {
 
 }
 
-console.log(middle_char("salem"));
+console.log(middle_char("Marawan"));
