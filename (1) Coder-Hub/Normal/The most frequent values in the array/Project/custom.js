@@ -1,19 +1,25 @@
 function most_frequent_element(arr) {
-  let uniqueElements = new Set(arr);
-  let mostFrequent = null;
-  let maxCount = 0;
 
-  uniqueElements.forEach(element => {
-      let count = arr.filter(el => el === element).length;
+  let sortedArray = arr.sort((a, b) => a - b);
+  let counter = 1;
+  let maxCount = 1;
+  let mostFrequent = sortedArray[0];
 
-      if (count > maxCount) {
-          mostFrequent = element;
-          maxCount = count;
-      }
-  });
+  for (let i = 1; i < sortedArray.length; i++) {
+    if (sortedArray[i] === sortedArray[i - 1]) {
+      counter++;
+    } else {
+      counter = 1;
+    }
+
+    if (counter > maxCount) {
+      maxCount = counter;
+      mostFrequent = sortedArray[i];
+    }
+  }
 
   return mostFrequent;
+
 }
 
-let arr = [13, 2, 1, 2, 10, 2, 1, 1, 2, 2];
-console.log(most_frequent_element(arr));
+console.log(most_frequent_element([1, 6, 4, 3, 3, 3, 2, 3, 4, 5, 3, 4])); 
