@@ -8,4 +8,4 @@ function evil(n) {
   }
 }
 
-console.log(evil(1));
+console.log(evil(3));
