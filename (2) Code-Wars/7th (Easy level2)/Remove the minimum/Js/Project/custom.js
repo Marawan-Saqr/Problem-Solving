@@ -1,8 +1,16 @@
 function removeSmallest(numbers) {
 
-  let theSmallestIndex = numbers.indexOf(Math.min(...numbers));
+  if (numbers.length === 0) {
+    return [];
+  }
 
-  return numbers.filter((_, index) => index !== theSmallestIndex);
+  let minNumber = Math.min(...numbers);
+  let minIndex = numbers.indexOf(minNumber);
+  let result = [...numbers];
+
+  result.splice(minIndex, 1);
+  return result;
+
 }
 
-console.log(removeSmallest([1, 2, 3, 4, 5]));
+console.log(removeSmallest([2, 2, 1, 2, 1]));
