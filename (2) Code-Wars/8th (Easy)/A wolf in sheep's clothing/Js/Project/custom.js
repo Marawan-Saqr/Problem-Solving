@@ -1,14 +1,15 @@
 function warnTheSheep(queue) {
 
-  const wolfIndex = queue.indexOf("wolf");
-
-  if (wolfIndex === queue.length - 1) {
-    return "Pls go away and stop eating my sheep";
-  } else {
-    const sheepNumber = queue.length - wolfIndex - 1;
-    return `Oi! Sheep number ${sheepNumber}! You are about to be eaten by a wolf!`;
+  let wolfPlace = queue.indexOf("wolf");
+  for (let i = queue.length - 1; i >= 0; i--) {
+    if (queue[queue.length - 1] === "wolf") {
+      return "Pls go away and stop eating my sheep";
+    } else if (queue[i] === "wolf") {
+      return `Oi! Sheep number ${queue.length - wolfPlace - 1}! You are about to be eaten by a wolf!`;
+    }
   }
-
 }
 
-console.log(warnTheSheep(["sheep", "sheep", "sheep", "sheep", "sheep", "sheep", "wolf", "sheep"])); 
+
+
+console.log(warnTheSheep(["sheep", "sheep", "sheep", "sheep", "sheep", "wolf", "sheep", "sheep"]));
