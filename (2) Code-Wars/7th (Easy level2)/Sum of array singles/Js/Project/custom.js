@@ -1,20 +1,21 @@
-function repeats(arr) {
-  const uniqueNumbers = new Set();
+function repeats(arr){
 
-  for (const num of arr) {
-    if (uniqueNumbers.has(num)) {
-      uniqueNumbers.delete(num);
-    } else {
-      uniqueNumbers.add(num);
+  let result = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr.indexOf(arr[i]) === arr.lastIndexOf(arr[i])) {
+      result.push(arr[i]);
     }
   }
 
-  let sum = 0;
-  for (const num of uniqueNumbers) {
-    sum += num;
-  }
+  let finalResult = result.reduce((acc, current)=> {
+    return acc + current;
+  })
 
-  return sum;
+  return finalResult;
+
 }
+
+
 
 console.log(repeats([4, 5, 7, 5, 4, 8]));
