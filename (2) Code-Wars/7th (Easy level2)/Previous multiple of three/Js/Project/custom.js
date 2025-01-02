@@ -1,13 +1,13 @@
 const prevMultOfThree = n => {
 
-  while (n > 0) {
+  while(n > 0) {
     if (n % 3 === 0) {
       return n;
     }
-    n = Math.floor(n / 10);
+    n = n.toString().slice(0, -1);
+    n = parseInt(n);
   }
-  return null;
 
 }
 
-console.log(prevMultOfThree(1244));
+console.log(prevMultOfThree(36));
