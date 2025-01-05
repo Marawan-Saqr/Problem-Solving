@@ -1,15 +1,15 @@
-var singleNumber = function (nums) {
-  let set = new Set();
+var singleNumber = function(nums) {
 
-  for (let num of nums) {
-    if (set.has(num)) {
-      set.delete(num);
-    } else {
-      set.add(num);
+  let result = 0;
+  for (let i = 0; i < nums.length; i++) {
+    if (nums.indexOf(nums[i]) === nums.lastIndexOf(nums[i])) {
+      result = nums[i];
     }
   }
 
-  return Array.from(set)[0];
-};
+  return result;
 
-console.log(singleNumber([2, 2, 1])); // Output: 1
+}
+
+
+console.log(singleNumber([4, 1, 2, 1, 2]));
