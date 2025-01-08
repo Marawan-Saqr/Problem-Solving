@@ -1,12 +1,14 @@
 var runningSum = function(nums) {
 
-  let result = nums.reduce((acc, current) => {
-    let lastSum = acc.length > 0 ? acc[acc.length - 1] : 0;
-    acc.push(lastSum + current);
-    return acc;
-  }, []);
+  let result = 0;
+  let finalResult = [];
 
-  return result;
+  for (let i = 0; i < nums.length; i++) {
+    result += nums[i];
+    finalResult.push(result);
+  }
+
+  return finalResult;
 
 }
 
