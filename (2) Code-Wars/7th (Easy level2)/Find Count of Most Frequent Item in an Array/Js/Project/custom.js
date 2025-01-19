@@ -1,7 +1,8 @@
 function mostFrequentItemCount(collection) {
+
   if (collection.length === 0) return 0;
 
-  const uniqueItems = new Set(collection);
+  const uniqueItems = new Set(collection); // {3, -1, 2, 4, 9}
   let maxCount = 0;
 
   uniqueItems.forEach(item => {
