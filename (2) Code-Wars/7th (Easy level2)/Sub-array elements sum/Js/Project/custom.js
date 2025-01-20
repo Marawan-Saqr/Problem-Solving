@@ -14,4 +14,5 @@ function elementsSum(arr, d = 0) {
 
 }
 
+
 console.log(elementsSum([[3, 2, 1, 0], [4, 6, 5, 3, 2], [9, 8, 7, 4]]));
