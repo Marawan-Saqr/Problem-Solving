@@ -1,24 +1,21 @@
 function digits(num){
 
-  let convertToString = num.toString();
-  let splited = convertToString.split("");
+  let result = [];
+  let sum = 0;
+  let stringed = num.toString();
 
-  
-  let newNumbers = [];
-  for (let i = 0; i < splited.length; i++) {
-    newNumbers.push(parseInt(splited[i]));
-  }
-
-
-  let finalResult = [];
-  for (let j = 0; j < newNumbers.length; j++) {
-    for (let k = j + 1; k < newNumbers.length; k++) {
-      finalResult.push(newNumbers[j] + newNumbers[k]);
+  for (let i = 0; i < stringed.length; i++) {
+    sum = 0;
+    for (let j = i + 1; j < stringed.length; j++) {
+      sum = parseInt(stringed[i]) + parseInt(stringed[j]);
+      result.push(sum);
     }
   }
 
-  return finalResult;
+  return result;
 
 }
+
+
 
 console.log(digits(12345));

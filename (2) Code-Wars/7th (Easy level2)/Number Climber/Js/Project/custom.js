@@ -1,19 +1,22 @@
-function climb(n) {
+function climb(n){
 
   let result = [];
-
-  for (let i = n; i > 0;) {
-
-    result.push(i);
-    if (i % 2 === 0) {
-      i = i / 2;
+  while(n > 1) {
+    if (n % 2 === 0) {
+      result.push(n);
+      n = n / 2;
     } else {
-      i = (i - 1) / 2;
+      result.push(n);
+      n = (n - 1) / 2;
     }
   }
 
+  result.push(1);
   return result.reverse();
 
 }
 
-console.log(climb(10));
+
+
+
+console.log(climb(13));
