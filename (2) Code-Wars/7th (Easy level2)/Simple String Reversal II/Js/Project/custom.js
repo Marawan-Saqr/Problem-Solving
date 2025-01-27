@@ -1,9 +1,9 @@
-function solve(st, a, b){
+function solve(st, a, b) {
 
-  let newString = st.substring(a, b + 1).split("").reverse().join("");
-  let result = st.substring(0, a) + newString + st.substring(b + 1);
+  let slicing = st.slice(a, b + 1);
+  let reversing = slicing.split("").reverse().join("");
 
-  return result;
+  return st.replace(slicing, reversing);
 
 }
 
