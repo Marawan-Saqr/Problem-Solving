@@ -1,15 +1,19 @@
 function sumOfIntegersInString(s) {
 
   let numbers = s.match(/\d+/g);
-  let result = 0;
 
-  if (numbers) {
-    numbers.map(function(e) {
-      result += parseInt(e);
-    });
+  if (numbers === null) {
+    return 0;
   }
+  
+  let result = numbers.reduce((acc, current)=> {
+    return Number(acc) + Number(current);
+  }, 0)
 
   return result;
+
 }
 
-console.log(sumOfIntegersInString("The30quick20brown10f0x1203jumps914ov3r1349the102l4zy dog"));
+
+
+console.log(sumOfIntegersInString("Dogs are our best friends."));
