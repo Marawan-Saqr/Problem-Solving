@@ -1,16 +1,21 @@
-function doubles(s) {
+function doubles(s){
 
-  let result = [];
+  let arr = s.split("");
+  let duplicates = [];
 
-  for (let i = 0; i < s.length; i++) {
-    if (result[result.length - 1] === s[i]) {
-      result.pop();
-    } else {
-      result.push(s[i]);
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i] === arr[i + 1]) {
+      duplicates.push(arr[i], arr[i + 1]);
+      arr.splice(i, 2);
+      i = Math.max(-1, i - 2);
     }
   }
 
-  return result.join('');
+  let joined = arr.join("");
+  return joined;
+
 }
 
-console.log(doubles('abbcccdddda'));
+
+
+console.log(doubles("abbcccdddda"));
