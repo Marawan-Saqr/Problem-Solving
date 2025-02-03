@@ -1,13 +1,27 @@
 function missingLetter(txt) {
-  for (let i = 0; i < txt.length - 1; i++) {
-    let currentCharCode = txt[i].charCodeAt(0);
-    let nextCharCode = txt[i + 1].charCodeAt(0);
 
-    if (nextCharCode - currentCharCode > 1) {
-      return String.fromCharCode(currentCharCode + 1);
+  let result = "";
+  let startCharCode = txt.charCodeAt(0);
+  let endCharCode = txt.charCodeAt(txt.length - 1);
+
+
+  for (let i = startCharCode; i <= endCharCode; i++) {
+    result += String.fromCharCode(i);
+  }
+
+
+  let finalResult = "";
+
+  for (let j = 0; j < result.length; j++) {
+    if (!txt.includes(result[j])) {
+      finalResult += result[j];
     }
   }
-  return "No Missing Letter";
+
+  return finalResult;
+
 }
 
-console.log(missingLetter("rsuv"));
+
+
+console.log(missingLetter("acdefgi"));
