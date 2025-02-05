@@ -1,20 +1,26 @@
 const sumAverage = (arr) => {
 
-  let finalResult = 0;
+  let result = [];
+  let sum = 0;
+  let avg = 0;
 
   for (let i = 0; i < arr.length; i++) {
-    let subArraySum = 0;
-    
+    sum = 0;
     for (let j = 0; j < arr[i].length; j++) {
-      subArraySum += arr[i][j];
+      sum += arr[i][j];
     }
-
-    let subArrayAverage = subArraySum / arr[i].length;
-    finalResult += subArrayAverage;
+    avg = sum / arr[i].length;
+    result.push(avg);
   }
+
+  let finalResult = result.reduce((acc, current)=> {
+    return acc + current;
+  }, 0)
 
   return Math.floor(finalResult);
 
 }
 
-console.log(sumAverage([[-4, 3, -8, -2], [2, 9, 1, -5], [-7, -2, -6, -4]]));
+
+
+console.log(sumAverage([[3, 4, 1, 3, 5, 1, 4], [21, 54, 33, 21, 77]]));
