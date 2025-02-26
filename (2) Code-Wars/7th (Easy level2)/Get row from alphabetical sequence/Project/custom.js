@@ -1,18 +1,23 @@
 function getRow(n) {
 
-  const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  const row = (n - 1) % 26 + 1;
+  let rowIndex = (n - 1) % 26 + 1;
+
+  let alphabetic = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let result = "";
 
 
-  if (row === 1) {
-    return alphabet
-  } else if (row === 26) {
-    return 'Z'.repeat(26)
+  for (let i = 0; i < alphabetic.length; i++) {
+    if (alphabetic[i] === String.fromCharCode(rowIndex + 64)) {
+      result += alphabetic[i].repeat(rowIndex);
+    } else {
+      result += alphabetic[i];
+    }
   }
 
-  const repeatedChar = alphabet[row - 1];
-  return repeatedChar.repeat(row) + alphabet.slice(row);
+  return result.slice(rowIndex - 1);
 
 }
 
-console.log(getRow(3));
+
+
+console.log(getRow(27));
