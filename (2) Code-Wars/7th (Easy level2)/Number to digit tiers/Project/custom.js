@@ -1,14 +1,21 @@
 function createArrayOfTiers(num) {
 
-  let splited = num.toString().split("");
+  let stringedNumber = num.toString();  // "420"
   let result = [];
 
-  for (let i = 0; i < splited.length; i++) {
-    result.push(splited.slice(0, i + 1).join(""));
+  for (let i = 0; i < stringedNumber.length; i++) {
+    if (i === 0) {
+      result.push(stringedNumber[i]);
+    } else {
+      result.push(stringedNumber.slice(0, i + 1));
+    }
   }
 
   return result;
 
+
 }
 
-console.log(createArrayOfTiers(420));
+
+
+console.log(createArrayOfTiers(2010));
