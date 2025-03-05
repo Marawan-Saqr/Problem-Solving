@@ -1,10 +1,16 @@
-var isSquare = function(n){
+var isSquare = function(n) {
 
-  const sqrt = Math.sqrt(n);
+  if (n < 0) {
+    return false;
+  }
 
-  return Number.isInteger(sqrt);
+  if (Number.isInteger(Math.sqrt(n))) {
+    return true;
+  } else {
+    return false;
+  }
 
 }
 
 
-console.log(isSquare(9));
+console.log(isSquare(-1));
