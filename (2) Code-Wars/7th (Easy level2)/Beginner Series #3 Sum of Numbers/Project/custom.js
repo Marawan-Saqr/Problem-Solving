@@ -6,10 +6,7 @@ function getSum(a, b) {
 
 
   let result = 0;
-  const start = Math.min(a, b);
-  const end = Math.max(a, b);
-
-  for (let i = start; i <= end; i++) {
+  for (let i = Math.min(a, b); i <= Math.max(a, b); i++) {
     result += i;
   }
 
@@ -19,5 +16,4 @@ function getSum(a, b) {
 
 
 
-
-console.log(getSum(-1, 2));
+console.log(getSum(0, -1));
