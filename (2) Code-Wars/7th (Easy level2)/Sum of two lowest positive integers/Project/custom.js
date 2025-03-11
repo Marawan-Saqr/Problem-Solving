@@ -1,10 +1,9 @@
-function sumTwoSmallestNumbers(numbers) {  
+function sumTwoSmallestNumbers(numbers) {
 
-  const [firstLowest, secondLowest] = numbers.sort((a, b) => a - b);
-
-  return firstLowest + secondLowest;
+  let sorted = numbers.sort((a, b)=> a - b);
+  const [a, b] = sorted;
+  return a + b;
 
 }
 
-
-console.log(sumTwoSmallestNumbers([19, 5, 42, 2, 77]));
+console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 22]));
