@@ -1,8 +1,7 @@
 function divisors(integer) {
 
   let result = [];
-
-  for (let i = 2; i < integer; i++) {
+  for (let i = 2; i < integer - 1; i++) {
     if (integer % i === 0) {
       result.push(i);
     }
@@ -17,4 +16,5 @@ function divisors(integer) {
 }
 
 
-console.log(divisors(12));
+
+console.log(divisors(13));
