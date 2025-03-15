@@ -12,4 +12,4 @@ function findMultiples(integer, limit) {
 
 
 
-console.log(findMultiples(2, 8));
+console.log(findMultiples(11, 54));
