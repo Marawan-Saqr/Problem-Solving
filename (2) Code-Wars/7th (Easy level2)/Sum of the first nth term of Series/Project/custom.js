@@ -12,4 +12,5 @@ function SeriesSum(n) {
 
 }
 
-console.log(SeriesSum(2));
+
+console.log(SeriesSum(3));
