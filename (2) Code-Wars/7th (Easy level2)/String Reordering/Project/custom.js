@@ -1,27 +1,22 @@
 function sentence(arrayOfObjects) {
 
-  let result = [];
-
-  const sortedItems = arrayOfObjects.sort((a, b) => {
-    const keyA = parseInt(Object.keys(a)[0]);
-    const keyB = parseInt(Object.keys(b)[0]);
+  let sorted = arrayOfObjects.sort((a, b) => {
+    let keyA = parseInt(Object.keys(a));
+    let keyB = parseInt(Object.keys(b));
     return keyA - keyB;
   });
 
-  sortedItems.forEach(item => {
-    const key = Object.keys(item)[0];
-    result += item[key] + " ";
-  });
+  let result = [];
+  for (let obj of sorted) {
+    result.push(Object.values(obj));
+  }
 
-  return result.split(" ").join(" ").trim();
-
+  return result.join(" ");
 
 }
 
 
 console.log(sentence([
-
-    {'4': 'dog' }, {'2': 'took'}, {'3': 'his'},
-    {'-2': 'Vatsan'}, {'5': 'for'}, {'6': 'a'}, {'12': 'spin'}
-
-  ]));
+  {'4': 'dog' }, {'2': 'took'}, {'3': 'his'},
+  {'-2': 'Vatsan'}, {'5': 'for'}, {'6': 'a'}, {'12': 'spin'}
+]));
