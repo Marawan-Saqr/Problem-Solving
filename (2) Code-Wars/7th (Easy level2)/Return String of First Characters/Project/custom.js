@@ -1,12 +1,16 @@
-function makeString(s) {
+function makeString(s){
 
-  let result = s.split(" ").map((element)=> {
-    return element[0];
-  })
+  let splited = s.split(" ");
+  let result = "";
 
-  return result.join("");
+  for (let i = 0; i < splited.length; i++) {
+    result += splited[i][0];
+  }
+
+  return result;
 
 }
+
 
 
 console.log(makeString("sees eyes xray yoat"));
