@@ -9,4 +9,6 @@ var splitInParts = function(s, partLength) {
 
 }
 
+
+
 console.log(splitInParts("supercalifragilisticexpialidocious", 3));
