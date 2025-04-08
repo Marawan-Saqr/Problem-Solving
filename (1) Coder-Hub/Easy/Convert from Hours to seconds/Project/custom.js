@@ -1,8 +1,6 @@
 function convert_to_seconds(hours) {
-  let minutes = 60;
-  let seconds = 60;
-  return hours * minutes * seconds;
+  return hours * 60 * 60;
 }
 
 
-console.log(convert_to_seconds(1));
+console.log(convert_to_seconds(9));

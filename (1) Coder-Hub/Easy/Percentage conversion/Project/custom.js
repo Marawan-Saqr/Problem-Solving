@@ -1,7 +1,6 @@
 function convertPercent(percentage) {
-
-  let convertToNumber = parseFloat(percentage);
-  return convertToNumber / 100;
+  let convert = parseInt(percentage);
+  return convert / 100;
 }
 
 console.log(convertPercent("30%"));

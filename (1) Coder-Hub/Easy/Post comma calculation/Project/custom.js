@@ -1,39 +1,64 @@
-function Decimal_places(num) {   // Chatgbt Solution
+// function Decimal_places(num) {   // Chatgbt Solution
   
-  let splited = num.split("");
-  let counter = 0;
+//   let splited = num.split("");
+//   let counter = 0;
 
-  for (let i = splited.length - 1; i >= 0; i--) {
-    if (splited.includes(".")) {
-      if (splited[i] === ".") {
-        break;
-      } else {
-        counter++;
-      }
-    } else {
-      return 0;
-    }
-  }
+//   for (let i = splited.length - 1; i >= 0; i--) {
+//     if (splited.includes(".")) {
+//       if (splited[i] === ".") {
+//         break;
+//       } else {
+//         counter++;
+//       }
+//     } else {
+//       return 0;
+//     }
+//   }
 
-  return counter;
+//   return counter;
 
-}
+// }
 
-console.log(Decimal_places("2.9"));
+// console.log(Decimal_places("2.9"));
 
 ////////////////////////////Another Solution///////////////////////////////////
 
-function Decimal_places(num) {   // My Solution
+// function Decimal_places(num) {   // My Solution
 
-  let splited = num.toString().split("");
+//   let splited = num.toString().split("");
 
-  if (!splited.includes(".")) {
-    return 0;
-  }
+//   if (!splited.includes(".")) {
+//     return 0;
+//   }
+
+//   let counter = 0;
+//   for (let i = splited.length - 1; i > 0; i--) {
+//     if (splited[i] !== ".") {
+//       counter++;
+//     }
+//   }
+
+//   return counter;
+
+// }
+
+// console.log(Decimal_places("2.9843"));
+
+
+
+///////////////////////////////////Third Solution//////////////////////////////////
+function Decimal_places(num) {
 
   let counter = 0;
-  for (let i = splited.length - 1; i > 0; i--) {
-    if (splited[i] !== ".") {
+
+  if (!num.includes(".")) {
+    return counter = 0;
+  }
+
+  for (let i = num.length - 1; i > 0; i--) {
+    if (num[i] === ".") {
+      break;
+    } else {
       counter++;
     }
   }
@@ -42,4 +67,5 @@ function Decimal_places(num) {   // My Solution
 
 }
 
-console.log(Decimal_places("2.9843"));
+
+console.log(Decimal_places("200"));
