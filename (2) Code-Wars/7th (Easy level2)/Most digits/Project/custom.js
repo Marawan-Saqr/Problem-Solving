@@ -1,15 +1,18 @@
-function findLongest(array){
+function findLongest(array) {
 
-  let result = array.map((item)=> {
-    return item.toString();
+  let stringed = array.map((element)=> {
+    return element.toString();
   })
 
-  const longestString = result.reduce((longest, str) => str.length > longest.length ? str : longest, "");
-  return Number(longestString);
+  let result = stringed.reduce((acc, current)=> {
+    return acc.length >= current.length ? acc : current;
+  })
+
+  return Number(result);
 
 }
 
 
 
 
-console.log(findLongest([1, 10, 100]));
+console.log(findLongest([8, 900, 500]));
