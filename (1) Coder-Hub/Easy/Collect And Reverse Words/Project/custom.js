@@ -1,8 +1,5 @@
 function reverse_words(str1, str2) {
-
-  let newWord = `${str2}, ${str1}`;
-
-  return newWord;
+  return `${str2}, ${str1}`;
 }
 
 

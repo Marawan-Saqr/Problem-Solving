@@ -1,17 +1,14 @@
 function get_duplicate_elements(arr) {
 
-  let myUniqueNumbers = new Set();
   let result = [];
-
   for (let i = 0; i < arr.length; i++) {
-    if (myUniqueNumbers.has(arr[i])) {
+    if (arr.indexOf(arr[i]) !== arr.lastIndexOf(arr[i])) {
       result.push(arr[i]);
-    } else {
-      myUniqueNumbers.add(arr[i]);
     }
   }
 
-  return result;
+  let uniqueElements = [...new Set(result)];
+  return uniqueElements;
 
 }
 
