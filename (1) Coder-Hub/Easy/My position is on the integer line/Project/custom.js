@@ -4,9 +4,10 @@ function less_or_more_than_zero(number) {
     return "Greater than zero";
   } else if (number < 0) {
     return "Less than zero";
-  } else if (number === 0) {
+  } else {
     return "Equal to zero";
   }
+
 }
 
 console.log(less_or_more_than_zero(5));

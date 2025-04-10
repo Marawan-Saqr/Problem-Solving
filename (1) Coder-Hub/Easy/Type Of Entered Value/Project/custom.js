@@ -1,8 +1,8 @@
 function input_type(value) {
 
   if (value.includes(".")) {
-    return "double";
-  } else if (parseInt(value)) {
+    return isNaN(Number(value)) ? "string" : "double";
+  } else if (Number(value)) {
     return "integer";
   } else {
     return "string";
@@ -10,4 +10,4 @@ function input_type(value) {
 
 }
 
-console.log(input_type("hello"));
+console.log(input_type("1.3"));
