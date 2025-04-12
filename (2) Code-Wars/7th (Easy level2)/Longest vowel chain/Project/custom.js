@@ -1,29 +1,21 @@
-function solve(s){
+function solve(s) {
 
-  let alphabetic = "aeiou";
-  let resultLength = "";
-  let store = "";
+  let vowels = ["a", "e", "i", "o", "u"];
+  let counter = 0;
+  let result = [];
 
   for (let i = 0; i < s.length; i++) {
-    if (alphabetic.includes(s[i])) {
-      store += s[i];
-      console.log(store);
-    } else {
-      if (resultLength.length < store.length) {
-        resultLength = store;
-      }
-      store = "";
+    if (vowels.includes(s[i])) {
+      counter++;
+      result.push(counter);
+    } else if (!vowels.includes(s[i])) {
+      counter = 0;
     }
   }
 
-  if (resultLength.length < store.length) {
-    resultLength = store;
-  }
-
-  return resultLength.length;
+  return Math.max(...result);
 
 }
 
 
-
-console.log(solve("suoidea"));
+console.log(solve("codewarriors"));
