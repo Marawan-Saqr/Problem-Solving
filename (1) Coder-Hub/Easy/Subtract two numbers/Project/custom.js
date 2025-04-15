@@ -3,4 +3,4 @@ function sub(a, b) {
 }
 
 
-console.log(sub(4, 2));
+console.log(sub(-5, 1));

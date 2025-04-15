@@ -1,16 +1,25 @@
-function change(string){
+function change(string) {
 
-  let stringOnly = string.replace(/[^a-zA-Z]/g, '').split("").join("").toLowerCase();  // abz
-  let incoding = Array(26).fill('0');
+  let positions = "000000000000000000000000000";
+  let charactersOnly = string.replace(/[^a-zA-Z]/g, '').split("").join("").toLowerCase();
+  let result = "";
+  let indexesArray = [];
+  let index = 0;
 
-
-  let position = 0;
-  for (let i = 0; i < stringOnly.length; i++) {
-    position = stringOnly[i].charCodeAt(0) - 97;
-    incoding[position] = '1';
+  for (let i = 0; i < charactersOnly.length; i++) {
+    index =  charactersOnly[i].charCodeAt(0) - 97 + 1;
+    indexesArray.push(index);
   }
 
-  return incoding.join("");
+  for (let i = 1; i < positions.length; i++) {
+    if (indexesArray.includes(i)) {
+      result += "1";
+    } else {
+      result += "0";
+    }
+  }
+
+  return result;
 
 }
 
