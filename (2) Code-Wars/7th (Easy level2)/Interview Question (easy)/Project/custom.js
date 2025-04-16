@@ -1,21 +1,20 @@
 function getStrings(city){
 
-  let smallChar = city.replace(/\s+/g, '').toLowerCase();
+  let smallChar = city.replace(/\s+/g, '').toLowerCase(); // lasvaegas
 
-  let result = "";
+  let newObj = {};
   for (let i = 0; i < smallChar.length; i++) {
-    if (smallChar.indexOf(smallChar[i]) === smallChar.lastIndexOf(smallChar[i])) {
-      result += `${smallChar[i]}:*,`;
+    if (newObj[smallChar[i]]) {
+      newObj[smallChar[i]] += "*";
     } else {
-      if (result.includes(smallChar[i])) {
-        continue;
-      } else {
-        const count = smallChar.split(smallChar[i]).length - 1;
-        result += `${smallChar[i]}:${"*".repeat(count)},`;
-      }
+      newObj[smallChar[i]] = "*";
     }
   }
 
+  let result = "";
+  for (let char in newObj) {
+    result += `${char}:${newObj[char]},`;
+  }
 
   return result.slice(0, -1);
 
@@ -24,4 +23,4 @@ function getStrings(city){
 
 
 
-console.log(getStrings("Las Vaegas"));
+console.log(getStrings("Chicago"));
