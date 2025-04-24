@@ -1,9 +1,8 @@
 function numbers_range(number) {
 
   let result = "";
-
-  for (let i = 0; i <= number; i++) {
-    result += ` ${i.toString()}`;
+  for (let i = 0; i <= number; i++ ) {
+    result += `${i} `;
   }
 
   return result.trim();
