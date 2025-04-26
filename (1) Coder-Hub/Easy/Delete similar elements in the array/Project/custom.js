@@ -1,11 +1,7 @@
 function remove_duplicate(arr) {
 
-  let uniqueElements = new Set(arr);
-
-  let result = [];
-
-  result.push(...uniqueElements);
-  return result;
+  let uniqueElements = [...new Set(arr)];
+  return uniqueElements;
 
 }
 
