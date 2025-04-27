@@ -1,18 +1,14 @@
 function remove(string) {
 
   let splited = string.split(" ");
-  let result = [];
 
-  let index = 0;
-  while (index < splited.length) {
-    while (splited[index].endsWith("!")) {
-      splited[index] = splited[index].slice(0, -1);
-    }
-    result.push(splited[index]);
-    index++;
+  let result = "";
+  for (let i = 0; i < splited.length; i++) {
+    let word = splited[i].replace(/!+(?=\s|$)/g, '');
+    result += word + " ";
   }
 
-  return result.join(" ");
+  return result.trim();
 
 }
 
