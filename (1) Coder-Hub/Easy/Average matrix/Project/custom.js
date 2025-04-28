@@ -1,5 +1,11 @@
 function get_mean(arr) {
-  return arr.reduce((a, b) => a + b) / arr.length;
+
+  let result = arr.reduce((acc, current)=> {
+    return acc + current;
+  }, 0);
+
+  return result / arr.length;
+
 }
 
 console.log(get_mean([4, 1]));
