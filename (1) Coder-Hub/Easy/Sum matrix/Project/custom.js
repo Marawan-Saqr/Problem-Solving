@@ -1,15 +1,16 @@
-function calculate_sum(lst) {
-  let sum = 0;
-  for(let i = 0; i < lst.length; i++) {
-    if (lst[i] === 7) {
-      return 0;
+function calculate_sum(array) {
+
+  let result = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === 7) {
+      break;
     } else {
-      sum += lst[i];
+      result += array[i];
     }
   }
-  return sum;
+
+  return result;
+
 }
 
-console.log(calculate_sum([1,2,3,4,7]));
-
-
+console.log(calculate_sum([1, 2, 7, 4, 6]));

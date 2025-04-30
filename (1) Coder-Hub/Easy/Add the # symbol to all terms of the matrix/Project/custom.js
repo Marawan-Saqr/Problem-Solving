@@ -1,10 +1,11 @@
 function hashtag_it(my_array) {  
 
-  let result = my_array.map(function(element) {
-    return ` #${element}`;
-  });
+  let result = "";
+  for (let i = 0; i < my_array.length; i++) {
+    result += `#${my_array[i]} `;
+  }
 
-  return result.join("").trim();
+  return result.trim();
 
 }
 

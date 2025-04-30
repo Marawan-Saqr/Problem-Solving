@@ -1,12 +1,11 @@
 function average(values) {
 
-  let result = 0;
+  let lengthOfValues = values.length;
+  let result = values.reduce((acc, current)=> {
+      return acc + current;
+  }, 0);
 
-  for (let i = 0; i < values.length; i++) {
-    result += values[i];
-  }
-
-  return result / values.length;
+  return result / lengthOfValues;
 
 }
 
