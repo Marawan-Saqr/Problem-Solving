@@ -1,10 +1,10 @@
 function arrowDuplicates(word) {
 
-  let result = "";
-  let smallChar = word.toLowerCase();
+  let small = word.toLowerCase();
 
-  for (let i = 0; i < smallChar.length; i++) {
-    if (smallChar.indexOf(smallChar[i]) === smallChar.lastIndexOf(smallChar[i])) {
+  let result = "";
+  for (let i = 0; i < small.length; i++) {
+    if (small.indexOf(small[i]) === small.lastIndexOf(small[i])) {
       result += ">";
     } else {
       result += "<";
@@ -16,4 +16,4 @@ function arrowDuplicates(word) {
 }
 
 
-console.log(arrowDuplicates("Bss"));
+console.log(arrowDuplicates("Bb"));

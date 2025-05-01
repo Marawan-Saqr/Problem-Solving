@@ -1,10 +1,11 @@
 function sub_arrays(arr1, arr2) {
 
-  let newArray = arr1.map(function(element, index) {
-    return element - arr2[index];
-  });
+  let result = [];
+  for (let i = 0; i < arr1.length; i++) {
+    result.push(arr2[i] - arr1[i]);
+  }
 
-  return newArray;
+  return result;
 
 }
 

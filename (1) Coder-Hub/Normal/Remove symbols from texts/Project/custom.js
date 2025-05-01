@@ -1,40 +1,50 @@
-function removeSpecialCharacters(strParam) {
+// function removeSpecialCharacters(strParam) {
 
-  let specialCharacters = ['$', '!', '@', '#', '.', '?'];
-  let result = "";
+//   let specialCharacters = ['$', '!', '@', '#', '.', '?'];
+//   let result = "";
 
-  for (let i = 0; i < strParam.length; i++) {
-    if (specialCharacters.includes(strParam[i])) {
-      continue;
-    } else {
-      result += strParam[i];
-    }
-  }
+//   for (let i = 0; i < strParam.length; i++) {
+//     if (specialCharacters.includes(strParam[i])) {
+//       continue;
+//     } else {
+//       result += strParam[i];
+//     }
+//   }
 
-  return result;
-}
+//   return result;
+// }
 
-console.log(removeSpecialCharacters("Are_u_coming?"));
+// console.log(removeSpecialCharacters("Are_u_coming?"));
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Another Solution Using Map
 
-function removeSpecialCharacters(strParam) {
+// function removeSpecialCharacters(strParam) {
 
-  let specialCharacters = ['$', '!', '@', '#', '.', '?'];
+//   let specialCharacters = ['$', '!', '@', '#', '.', '?'];
   
 
-  let result = strParam.split("").map(function(e) {
-    if (specialCharacters.includes(e)) {
-      return "";
-    } else {
-      return e;
-    }
-  }).join("");
+//   let result = strParam.split("").map(function(e) {
+//     if (specialCharacters.includes(e)) {
+//       return "";
+//     } else {
+//       return e;
+//     }
+//   }).join("");
 
+//   return result;
+
+// }
+
+// console.log(removeSpecialCharacters("Are_u_coming?"));
+
+
+////////////////////////////////////////////////////////////////////////////////////////////
+
+function removeSpecialCharacters(strParam) {
+  let result = strParam.replace(/[`~!@#$%^&*()|+\=?;:'",.<>\{\}\[\]\\\/]/gi,'')
   return result;
-
 }
 
-console.log(removeSpecialCharacters("Are_u_coming?"));
+console.log(removeSpecialCharacters("He@llo_Wo#rld-2025!"));

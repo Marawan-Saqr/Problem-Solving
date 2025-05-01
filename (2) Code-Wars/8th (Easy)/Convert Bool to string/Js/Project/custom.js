@@ -1,11 +1,5 @@
-function booleanToString(b){
-
-  if (b === true) {
-    return `${b}`;
-  } else {
-    return `${b}`;
-  }
-
+function booleanToString(b) {
+  return b.toString();
 }
 
 console.log(booleanToString(false));
