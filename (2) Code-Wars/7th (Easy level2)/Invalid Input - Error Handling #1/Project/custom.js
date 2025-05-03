@@ -9,7 +9,8 @@ function getCount(words) {
     return obj;
   }
 
-  let noSpaces = words.replace(/[^a-zA-Z]/g, '').split("").join("");
+  let noSpaces = words.replace(/[^a-zA-Z]/g, '');
+  console.log(noSpaces);
   let vowels = "aeiouAEIOU";
   
 
@@ -23,8 +24,7 @@ function getCount(words) {
 
   return obj;
 
-
 }
 
 
-console.log(getCount("Lorem, ipsum"));
+console.log(getCount("Here is some text"));
