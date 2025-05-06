@@ -3,3 +3,6 @@ class Kata {
     return length * width * height;
   }
 }
+
+
+console.log(Kata.getVolumeOfCuboid(2, 2, 2));

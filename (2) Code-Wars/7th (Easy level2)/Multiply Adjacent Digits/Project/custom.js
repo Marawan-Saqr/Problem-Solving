@@ -1,16 +1,24 @@
 function digitMultiplication(expr) {
 
-  let result = 1;
+  let total = 0;
+  let currentProduct = 1;
+  let sign = 1;
+
   for (let i = 0; i < expr.length; i++) {
-    if (!isNaN(expr[i])) {
-      result += Number(expr[i]);
-    } else if (expr[i] === "+" || expr[i] === "-") {
-      
-    }
+      const char = expr[i];
+      if (!isNaN(Number(char))) {
+          currentProduct *= Number(char);
+      } else if (char === '+' || char === '-') {
+          total += sign * currentProduct;
+          currentProduct = 1;
+          sign = char === '+' ? 1 : -1;
+      }
   }
-  return result;
+  total += sign * currentProduct;
+  return total;
+
 }
 
 
 
-console.log(digitMultiplication("13579+9+9+9-11"));
+console.log(digitMultiplication("53+5"));
