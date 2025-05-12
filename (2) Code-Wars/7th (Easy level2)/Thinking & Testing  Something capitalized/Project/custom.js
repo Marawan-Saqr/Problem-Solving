@@ -1,18 +1,22 @@
 function testit(s) {
 
   let result = "";
-  for (let i = 0; i < s.length; i++) {
-    if (s[i] === " ") {
-      result = result.slice(0, -1) + s[i - 1].toUpperCase();
-      result += " "; // Add the space
-    } else if (i === s.length - 1) {
-      result += s[i].toUpperCase();
-    } else {
-      result += s[i];
+  let splited = s.split(" ");    // ['a', 'a']
+
+
+  for (let i = 0; i < splited.length; i++) {
+    for (let j = 0; j < splited[i].length; j++) {
+      if (j === splited[i].length - 1) {
+        result += splited[i][j].toUpperCase();
+        result += " ";
+      } else {
+        result += splited[i][j];
+      }
     }
   }
-  return result;
+
+  return result.trim();
 
 }
 
-console.log(testit("a a"));
+console.log(testit("ab ab"));

@@ -14,6 +14,7 @@ class List {
   }
 }
 
+
 // Operations
 let newList = new List("string");
 console.log(newList.add("Milk").add("hhh"));
