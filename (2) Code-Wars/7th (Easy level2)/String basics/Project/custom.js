@@ -1,6 +1,12 @@
 function getUsersIds(str) {
 
-  return str.split(',').map(e => e.replace(/#/g, '').replace(/uid/, '').trim().toLowerCase());
+  let splited = str.split(",");
+  let result = [];
+  for (let i = 0; i < splited.length; i++) {
+    result.push(splited[i].replace(/#/g, '').replace(/uid/, '').trim().toLowerCase());
+  }
+
+  return result;
 
 }
 
