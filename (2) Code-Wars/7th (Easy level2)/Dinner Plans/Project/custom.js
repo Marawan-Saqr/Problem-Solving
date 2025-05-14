@@ -1,13 +1,12 @@
 function commonGround(s1, s2){
 
-  let splited = s1.split(" ");
-  let splited2 = s2.split(" ");
+  let splitedOne = s1.split(" ");
+  let splitedTwo = s2.split(" ");
   let result = [];
 
-
-  for (let i = 0; i < splited.length; i++) {
-    if (splited.includes(splited2[i])) {
-      result.push(splited2[i]);
+  for (let i = 0; i < splitedTwo.length; i++) {
+    if (splitedOne.includes(splitedTwo[i])) {
+      result.push(splitedTwo[i]);
     }
   }
 
@@ -17,4 +16,4 @@ function commonGround(s1, s2){
 
 
 
-console.log(commonGround("eat chicken and rice", "eat"));
+console.log(commonGround("eat a burger and drink a coke", "drink a coke"));
