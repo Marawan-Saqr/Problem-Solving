@@ -1,11 +1,10 @@
 function makeUpperCase(str) {
 
-  let newResult = "";
-  for (let i = 0; i < str.length; i++) {
-    newResult += str[i].toUpperCase();
-  }
+  let result = str.split("").map((element)=> {
+    return element.toUpperCase();
+  });
 
-  return newResult;
+  return result.join("");
 
 }
 
