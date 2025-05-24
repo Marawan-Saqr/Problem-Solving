@@ -1,10 +1,11 @@
 function boatLoader(a) {
 
-  let all="AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz".split("");
+  let all = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz".split("");
   let result = [];
-
-  for (var c of all) {
-    if (a.indexOf(c) != a.lastIndexOf(c)) result.push([c, c]);
+  for (let i = 0; i < all.length; i++) {
+    if (a.indexOf(all[i]) !== a.lastIndexOf(all[i])) {
+      result.push([all[i], all[i]]);
+    }
   }
 
   return result;
@@ -13,4 +14,5 @@ function boatLoader(a) {
 
 
 
-console.log(boatLoader(['g', 'c', 'h', 'c', 'g', 'm', 'g']));
+
+console.log(boatLoader(['g', 'c', 'h', 'c', 'g', 'm']));
