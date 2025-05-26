@@ -1,12 +1,11 @@
 function isSortedAndHow(array) {
 
-  const ascending = [...array].sort((a, b) => a - b);
-  const descending = [...array].sort((a, b) => b - a);
+  const ascending = array.slice().sort((a, b) => a - b);
+  const descending = array.slice().sort((a, b) => b - a);
 
-
-  if (array.join(",") === ascending.join(",")) {
+  if (array.every((val, i)=> val === ascending[i])) {
     return "yes, ascending";
-  } else if (array.join(",") === descending.join(",")) {
+  } else if (array.every((val, i)=> val === descending[i])) {
     return "yes, descending";
   } else {
     return "no";
@@ -14,5 +13,5 @@ function isSortedAndHow(array) {
 
 }
 
-
 console.log(isSortedAndHow([1, 2, 3]));
+console.log(isSortedAndHow([3, 2, 1]));
