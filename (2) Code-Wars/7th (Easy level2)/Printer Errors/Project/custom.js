@@ -1,18 +1,17 @@
 function printerError(s) {
 
-  let errors = 0;
-
+  let correctedLetters = "abcdefghijklm";
+  let errorsLog = 0;
   for (let i = 0; i < s.length; i++) {
-    if (!(s[i] >= 'a' && s[i] <= 'm')) {
-      errors++;
+    if (!correctedLetters.includes(s[i])) {
+      errorsLog++;
     }
   }
 
-
-  return `${errors}/${s.length}`;
+  return `${errorsLog}/${s.length}`;
 
 }
 
 
 
-console.log(printerError("aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz"));
+console.log(printerError("aaaxbbbbyyhwawiwjjjwwm"));
