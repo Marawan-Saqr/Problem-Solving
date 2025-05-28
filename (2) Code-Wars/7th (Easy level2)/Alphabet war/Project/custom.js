@@ -1,39 +1,39 @@
 function alphabetWar(fight) {
 
-  let leftTotal = 0;
-  let rightTotal = 0;
+  let leftSide = 0;
+  let rightSide = 0;
 
-  const leftSide = {
+  const left = {
     w: 4,
     p: 3,
     b: 2,
     s: 1
-  };
+  }
 
-  const rightSide = {
+  const right = {
     m: 4,
     q: 3,
     d: 2,
     z: 1
-  };
+  }
 
 
-  for (const char of fight) {
-    if (char in leftSide) {
-      leftTotal += leftSide[char];
-    } else if (char in rightSide) {
-      rightTotal += rightSide[char];
+  for (let char of fight) {
+    if (left.hasOwnProperty(char)) {
+      leftSide += left[char];
+    } else if (right.hasOwnProperty(char)) {
+      rightSide += right[char];
     }
   }
 
-  if (leftTotal > rightTotal) {
+
+  if (leftSide > rightSide) {
     return "Left side wins!";
-  } else if (leftTotal < rightTotal) {
+  } else if (rightSide > leftSide) {
     return "Right side wins!";
   } else {
     return "Let's fight again!";
   }
-
 
 }
 
