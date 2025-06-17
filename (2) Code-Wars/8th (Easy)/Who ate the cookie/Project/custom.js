@@ -1,7 +1,7 @@
 function cookie(x){
 
   if (typeof x === "string") {
-    return "Who ate the last cookie? It was Zach!";
+    return "Who ate the last cookie? It was Zach!"
   } else if (typeof x === "number") {
     return "Who ate the last cookie? It was Monica!";
   } else {
@@ -9,6 +9,7 @@ function cookie(x){
   }
 
 }
+
 
 
 console.log(cookie(26));

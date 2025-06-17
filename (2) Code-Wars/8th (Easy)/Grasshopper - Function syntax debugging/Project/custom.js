@@ -1,5 +1,6 @@
-function main (verb, noun) {
+function main(verb, noun) {
   return verb + noun;
 }
 
-console.log(main("take", "item"));
+
+console.log(main("Hello", "World"));
