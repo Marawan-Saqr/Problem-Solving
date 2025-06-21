@@ -1,8 +1,9 @@
-function automorphic(n){
+function automorphic(n) {
 
-  let powered = Math.pow(n, 2);
+  let squared = Math.pow(n, 2);
+  let stringed = squared.toString();   // "625"
 
-  if (powered.toString().endsWith(n.toString())) {
+  if (stringed.endsWith(n)) {
     return "Automorphic";
   } else {
     return "Not!!";
