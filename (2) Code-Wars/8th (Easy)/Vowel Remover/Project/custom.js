@@ -5,9 +5,7 @@ function shortcut (string) {
   let result = "";
 
   for (let i = 0; i < string.length; i++) {
-    if (vowels.includes(string[i])) {
-      result += "";
-    } else {
+    if (!vowels.includes(string[i])) {
       result += string[i];
     }
   }
