@@ -1,13 +1,13 @@
 function addLength(str) {
 
-  let newArray = [];
-  let splitedStr = str.split(" ");  // ["apple", "ban"]
+  let result = [];
+  let splited = str.split(" ");
 
-  for (let i = 0; i < splitedStr.length; i++) {
-    newArray.push(`${splitedStr[i]} ${splitedStr[i].length}`);
+  for (let i = 0; i < splited.length; i++) {
+    result.push(splited[i] + " " + splited[i].length)
   }
 
-  return newArray;
+  return result;
 
 }
 
