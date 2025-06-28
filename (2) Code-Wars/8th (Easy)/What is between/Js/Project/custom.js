@@ -1,11 +1,11 @@
 function between(a, b) {
 
-  let newArray = [];
+  let result = [];
   for (let i = a; i <= b; i++) {
-    newArray.push(i);
+    result.push(i);
   }
 
-  return newArray;
+  return result;
 
 }
 

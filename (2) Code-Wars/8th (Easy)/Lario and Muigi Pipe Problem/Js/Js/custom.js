@@ -1,14 +1,14 @@
-function pipeFix(numbers){
+function pipeFix(numbers) {
 
+  let result = [];
   let min = Math.min(...numbers);
   let max = Math.max(...numbers);
-  let newArray = [];
 
   for (let i = min; i <= max; i++) {
-    newArray.push(i);
+    result.push(i);
   }
 
-  return newArray;
+  return result;
 
 }
 

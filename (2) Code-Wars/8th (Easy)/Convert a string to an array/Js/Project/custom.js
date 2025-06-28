@@ -1,6 +1,7 @@
 function stringToArray(string){
 
-  return string.split(" ");
+  let splited = string.split(" ");
+  return splited;
 
 }
 

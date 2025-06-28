@@ -1,11 +1,15 @@
 function transposeTwoStrings(array) {
+
   let maxLength = Math.max(array[0].length, array[1].length);
   let result = [];
+  let wordOne = array[0];
+  let wordTwo = array[1];
+
 
   for (let i = 0; i < maxLength; i++) {
-    let char1 = array[0][i] || " ";
-    let char2 = array[1][i] || " ";
-    result.push(char1 + " " + char2);
+    let charOne = wordOne[i] || " ";
+    let charTwo = wordTwo[i] || " ";
+    result.push(charOne + " " + charTwo);
   }
 
   return result.join("\n");
@@ -13,4 +17,4 @@ function transposeTwoStrings(array) {
 }
 
 
-console.log(transposeTwoStrings(["Cat", ""]));
+console.log(transposeTwoStrings(['Marawan', 'Saqr']));
