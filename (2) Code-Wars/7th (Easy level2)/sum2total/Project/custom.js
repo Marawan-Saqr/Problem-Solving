@@ -1,22 +1,15 @@
 function total(arr) {
 
   let result = arr;
-
   while(result.length > 1) {
-    let tempResult = [];
-    let index = 0;
-
-    while(index < result.length - 1) {
-      let sum = result[index] + result[index + 1];
-      tempResult.push(sum);
-      index++;
+    let temp = [];
+    for (let i = 0; i < result.length - 1; i++) {
+      temp.push(result[i] + result[i + 1]);
     }
-
-    result = tempResult;
+    result = temp;
   }
 
-  return Number(result.toString());
-
+  return Number(result.join(""));
 
 }
 
