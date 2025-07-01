@@ -43,3 +43,21 @@ function arrayPlusArray(arr1, arr2) {
 }
 
 console.log(arrayPlusArray([1, 2, 3], [1, 2, 3]));
+
+/////////////////////////////////////////////////////////////////////////////
+
+function arrayPlusArray(arr1, arr2) {
+
+  arr1.push(arr2);
+  let flated = arr1.flat(arr2.length);
+
+  let reduced = flated.reduce((acc, current) => {
+    return acc + current;
+  }, 0)
+
+  return reduced;
+
+}
+
+
+console.log(arrayPlusArray([1, 2, 3], [4, 5, 6]));
