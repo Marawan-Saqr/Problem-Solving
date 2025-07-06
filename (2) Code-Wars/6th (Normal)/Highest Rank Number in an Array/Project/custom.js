@@ -1,18 +1,22 @@
-function mostFrequentNumber(arr) {
-  let freqMap = {};
-  let maxNum = arr[0], maxCount = 0;
+function highestRank(arr) {
 
-  for (let num of arr) {
-      freqMap[num] = (freqMap[num] || 0) + 1;
-
-      if (freqMap[num] > maxCount || (freqMap[num] === maxCount && num > maxNum)) {
-          maxCount = freqMap[num];
-          maxNum = num;
-      }
+  let freqObject = {};
+  for (let i = 0; i < arr.length; i++) {
+    if (freqObject[arr[i]]) {
+      freqObject[arr[i]]++;
+    } else {
+      freqObject[arr[i]] = 1;
+    }
   }
 
-  return maxNum;
+  let maxKey = Object.values(freqObject).reduce((acc, current)=> {
+    return freqObject[acc] > freqObject[current] ? acc : current
+  });
+
+  return Number(maxKey);
+
 }
 
 
-console.log(mostFrequentNumber([1, 3, 2, 3, 4, 1, 3, 2, 1, 1]));
+
+console.log(highestRank([12, 10, 8, 8, 3, 3, 3, 3, 2, 4, 10, 12, 10]));
