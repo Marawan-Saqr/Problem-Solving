@@ -1,18 +1,20 @@
 function sortArray(array) {
 
-  let oddNumbers = array.filter((element)=> {
+  let filterOdd = array.filter((element)=> {
     return element % 2 !== 0;
   }).sort((a, b)=> {
-    return  a - b;
+    return a - b;
   })
 
 
-  let index = 0;
-  let finalResult =  array.map((element)=> {
-    return element % 2 !== 0 ? oddNumbers[index++] : element;
-  })
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 !== 0) {
+      array[i] = filterOdd.shift();
+    }
+  }
 
-  return finalResult;
+
+  return array;
 
 }
 
