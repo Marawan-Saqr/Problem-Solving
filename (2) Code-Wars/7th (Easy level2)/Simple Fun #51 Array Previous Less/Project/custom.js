@@ -1,13 +1,12 @@
 function arrayPreviousLess(arr) {
 
   let result = [];
-
   for (let i = 0; i < arr.length; i++) {
-    let j = i - 1;
-    while (j >= 0 && arr[j] >= arr[i]) {
-      j--;
+    let last = i - 1;
+    while(arr[last] >= arr[i]) {
+      last--;
     }
-    result.push(j >= 0 ? arr[j] : -1);
+    result.push(last >= 0 ? arr[last] : -1);
   }
 
   return result;
