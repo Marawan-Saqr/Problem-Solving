@@ -1,14 +1,13 @@
 var capitals = function(word) {
 
-  let newArray = [];
-
+  let result = [];
   for (let i = 0; i < word.length; i++) {
     if (word[i] === word[i].toUpperCase()) {
-      newArray.push(word.indexOf(word[i]));
+      result.push(i);
     }
   }
 
-  return newArray;
+  return result;
 
 }
 

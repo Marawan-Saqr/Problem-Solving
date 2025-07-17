@@ -1,8 +1,8 @@
 function reverseWords(str) {
 
   let splited = str.split(" ");
-
   let result = [];
+
   for (let i = 0; i < splited.length; i++) {
     result.push(splited[i].split("").reverse().join(""));
   }
@@ -12,4 +12,4 @@ function reverseWords(str) {
 }
 
 
-console.log(reverseWords("This is an example!"));
+console.log(reverseWords("The quick brown fox jumps over the lazy dog."));

@@ -1,22 +1,20 @@
 function count(string) {
 
-  if (string.length === 0 || string === "") {
+  if (string.length === 0) {
     return {};
   }
 
-  let obj = {};
 
-
-  for (let i = 0; i < string.length; i++) {   // aab
-    let char = string[i];
-    if (obj[char]) {
-      obj[char]++;
+  let counterObject = {};
+  for (let i = 0; i < string.length; i++) {
+    if (counterObject[string[i]]) {
+      counterObject[string[i]]++;
     } else {
-      obj[char] = 1;
+      counterObject[string[i]] = 1;
     }
   }
 
-  return obj;
+  return counterObject;
 
 }
 
