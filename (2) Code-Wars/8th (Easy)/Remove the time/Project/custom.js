@@ -1,10 +1,7 @@
 function shortenToDate(longDate) {
 
-  let splited = longDate.split(",");
-
-  splited.pop();
-
-  return splited.join(" ");
+  let splited = longDate.split(" ");
+  return splited.slice(0, -1).join(" ").slice(0, -1);
 
 }
 

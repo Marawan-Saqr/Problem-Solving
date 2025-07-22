@@ -1,16 +1,13 @@
 function getAverage(marks){
 
-  let result = 0;
-  let average = 0;
+  let summed = marks.reduce((acc, current)=> {
+    return acc + current;
+  }, 0);
 
-  for (let i = 0; i < marks.length; i++) {
-    result += marks[i];
-  }
-
-  average = result / marks.length;
-
-  return Math.floor(average);
+  return Math.floor(summed / marks.length);
 
 }
 
-console.log(getAverage([1,1,1,1,1,1,1,2]));
+
+
+console.log(getAverage([1, 1, 1, 1, 1, 1, 1, 2]));
