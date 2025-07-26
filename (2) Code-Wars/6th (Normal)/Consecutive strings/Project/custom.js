@@ -1,16 +1,28 @@
 function longestConsec(strarr, k) {
 
-  if (strarr.length === 0 || k > strarr.length || k <= 0) return "";
-
-  let longestStr = "";
+  let result = [];
   for (let i = 0; i <= strarr.length - k; i++) {
-    let combinedString = strarr.slice(i, i + k).join("");
-    if (combinedString.length > longestStr.length) {
-      longestStr = combinedString;
+    let obj = {};
+    let combine = "";
+    for (let j = 0; j < k; j++) {
+      combine += strarr[i + j];
+    }
+    obj.wordName = combine;
+    result.push(obj);
+  }
+
+
+  let longest = 0;
+  let longestWord = "";
+  for (let i = 0; i < result.length; i++) {
+    let length = result[i].wordName.length;
+    if (length > longest) {
+      longest = length;
+      longestWord = result[i].wordName;
     }
   }
 
-  return longestStr;
+  return longestWord;
 
 }
 
