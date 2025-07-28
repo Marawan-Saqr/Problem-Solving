@@ -28,9 +28,3 @@ function hiddenWord(num) {
   return result;
 
 }
-
-
-
-
-
-console.log(hiddenWord(7415));
