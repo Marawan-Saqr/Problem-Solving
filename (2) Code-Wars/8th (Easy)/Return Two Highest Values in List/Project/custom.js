@@ -1,10 +1,15 @@
 function twoHighest(arr) {
 
-  let uniqueArr = [...new Set(arr)];
+  if (arr.length === 0) {
+    return [];
+  } else if (arr.length <= 1) {
+    return arr;
+  }
 
-  uniqueArr.sort((a, b) => b - a);
 
-  return uniqueArr.slice(0, 2);
+  let uniqueValues = [...new Set(arr)];
+  const [valueOne, valueTwo] = uniqueValues.sort((a, b)=> b - a);
+  return [valueOne, valueTwo];
 
 }
 
