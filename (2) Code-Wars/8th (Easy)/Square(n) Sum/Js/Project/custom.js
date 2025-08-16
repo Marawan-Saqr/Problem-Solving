@@ -1,12 +1,14 @@
-function squareSum(numbers){
-  let result = 0;
+function squareSum(numbers) {
 
-  for (let i = 0; i < numbers.length; i++) {
-    result += Math.pow(numbers[i], 2);
-  }
+  let squareSum = numbers.reduce((acc, current)=> {
+    return acc + Math.pow(current, 2);
+  }, 0);
 
-  return result;
+  return squareSum;
 
 }
+
+
+
 
 console.log(squareSum([1, 2, 2]));
