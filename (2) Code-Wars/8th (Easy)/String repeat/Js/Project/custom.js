@@ -4,4 +4,6 @@ function repeatStr(n, s) {
 
 }
 
+
+
 console.log(repeatStr(3, "*"));
