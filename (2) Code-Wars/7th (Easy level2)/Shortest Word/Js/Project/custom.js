@@ -1,32 +1,14 @@
 function findShort(s) {
 
-  let splited = s.split(" ");
-  let result = [];
+  let splitedWords = s.split(" ");
+  let numberOfCharacters = splitedWords.map((element)=> {
+    return element.length;
+  });
 
-  for (let i = 0; i < splited.length; i++) {
-    result.push(splited[i].length);
-  }
-
-  let sorted = result.sort((a, b) => a - b);
-
-  return sorted[0];
+  let shortetWord = Math.min(...numberOfCharacters);
+  return shortetWord;
 
 }
 
-console.log(findShort("bitcoin take over the world maybe who knows perhaps"));
-
-//////////////////////////Another Solution////////////////////////////////////////////////////
-
-function findShort(s) {
-
-  let splited = s.split(" ");
-  let sorted = splited.sort((a, b) => a.length - b.length);
-  let newArray = [];
-
-  newArray.push(sorted[0].length);
-
-  return parseInt(newArray.join());
-
-}
 
 console.log(findShort("bitcoin take over the world maybe who knows perhaps"));
