@@ -1,17 +1,14 @@
 function sum(numbers) {
 
-  if (numbers.length === 0) {
-    return 0;
-  }
+  let sumNumbers = numbers.reduce((acc, current)=> {
+    return acc + current;
+  }, 0);
 
-  let sum = 0;
-
-  for (let i = 0; i < numbers.length; i++) {
-    sum += numbers[i];
-  }
-
-  return sum;
+  return sumNumbers;
 
 }
+
+
+
 
 console.log(sum([1, 5.2, 4, 0, -1]));
