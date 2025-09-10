@@ -1,4 +1,4 @@
-function hoopCount (n) {
+function hoopCount(n) {
 
   if (n >= 10) {
     return "Great, now move on to tricks";
