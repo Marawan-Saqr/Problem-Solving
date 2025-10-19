@@ -4,3 +4,6 @@ function AreaOfSquare(length) {
 
 
 console.log(AreaOfSquare(5));
+console.log(AreaOfSquare(6));
+console.log(AreaOfSquare(7));
+console.log(AreaOfSquare(8));

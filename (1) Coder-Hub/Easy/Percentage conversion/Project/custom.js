@@ -1,6 +1,13 @@
 function convertPercent(percentage) {
-  let convert = parseInt(percentage);
-  return convert / 100;
+
+  let decimalNumber = parseInt(percentage) / 100;
+  return decimalNumber;
+
 }
 
+
+
 console.log(convertPercent("30%"));
+console.log(convertPercent("50%"));
+console.log(convertPercent("20%"));
+console.log(convertPercent("10%"));
