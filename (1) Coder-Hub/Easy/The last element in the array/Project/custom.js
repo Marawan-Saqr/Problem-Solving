@@ -1,6 +1,10 @@
 function last_elm(arr) {
-  return arr[arr.length - 1];
+
+  let lastElement = arr[arr.length - 1];
+  return lastElement;
+
 }
 
 
-console.log(last_elm([3, 4, 5, 6, 1, 4, 6]));
+
+console.log(last_elm([42, 32, 42, 11, 30]));

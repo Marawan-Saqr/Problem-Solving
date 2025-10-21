@@ -11,4 +11,5 @@ function search(word, character) {
 }
 
 
+
 console.log(search("cloud", "u"));

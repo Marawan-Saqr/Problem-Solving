@@ -1,10 +1,9 @@
 function sum_two_smallest_nums(arr) {
 
   let sorted = arr.sort((a, b)=> a - b);
+  let [num1, num2] = sorted;
 
-  let [numberOne, numberTwo] = sorted;
-
-  return numberOne + numberTwo;
+  return num1 + num2;
 
 }
 

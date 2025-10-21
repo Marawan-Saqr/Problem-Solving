@@ -12,4 +12,4 @@ function get_duplicate_elements(arr) {
 
 }
 
-console.log(get_duplicate_elements([10, 5, 9, 5, 4, 4, 3]));
+console.log(get_duplicate_elements([10, 5, 9, 5]));
