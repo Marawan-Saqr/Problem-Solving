@@ -5,7 +5,7 @@ function search(word, character) {
       return i;
     }
   }
-
+  
   return -1;
 
 }

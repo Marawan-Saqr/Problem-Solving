@@ -1,7 +1,6 @@
 function last_elm(arr) {
 
-  let lastElement = arr[arr.length - 1];
-  return lastElement;
+  return arr[arr.length - 1];
 
 }
 

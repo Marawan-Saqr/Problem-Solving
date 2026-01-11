@@ -14,7 +14,3 @@ function deleteLastChar(word) {
 
 
 console.log(deleteLastChar("CoderHub"));
-console.log(deleteLastChar("Marawan"));
-console.log(deleteLastChar("Deltabox"));
-console.log(deleteLastChar("Egele"));
-console.log(deleteLastChar("Programming"));
