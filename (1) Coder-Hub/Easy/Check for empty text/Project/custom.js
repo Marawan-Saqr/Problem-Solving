@@ -1,9 +1,11 @@
 function isEmpty(strParam) {
-  if (strParam.length === 0) {
+
+  if (strParam === "") {
     return true;
   } else {
     return false;
   }
+
 }
 
 console.log(isEmpty(""));

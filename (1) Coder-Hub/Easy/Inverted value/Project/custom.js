@@ -1,10 +1,9 @@
 function isMirrored(num) {
 
-  let stringed = num.toString();
-  let inverted = stringed.split("").reverse().join("");
+  let stringedNumber = num.toString();
+  let invertedNumber = stringedNumber.split("").reverse().join("");
 
-  return stringed === inverted;
-
+  return stringedNumber === invertedNumber;
 
 }
 

@@ -1,9 +1,9 @@
 function returnStringLetters(string1, string2) {
 
-  let numberOne = string1.length;
-  let numberTwo = string2.length;
+  let stringOneLength = string1.length;
+  let stringTwoLength = string2.length;
 
-  return Math.max(numberOne, numberTwo);
+  return Math.max(stringOneLength, stringTwoLength);
 
 }
 

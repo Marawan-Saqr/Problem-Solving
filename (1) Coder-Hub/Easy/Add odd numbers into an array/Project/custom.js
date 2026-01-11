@@ -1,14 +1,13 @@
 function sumOdd(arr) {
 
-  let result = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 !== 0) {
-      result += arr[i];
-    }
-  }
+  let filtered = arr.filter((number)=> {
+    return number % 2 !== 0;
+  }).reduce((acc, current)=> {
+    return acc + current;
+  }, 0);
 
-  return result;
+  return filtered;
 
 }
 
-console.log(sumOdd([2, 9, 5, 4, 0]));
+console.log(sumOdd([3, 12, 6]));

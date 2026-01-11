@@ -1,10 +1,12 @@
 function sum_even(arr) {
 
-  let filtered = arr.filter((element)=> {
-    return element % 2 === 0;
-  })
+  let filteredNumbers = arr.filter((num)=> {
+    return num % 2 === 0;
+  }).reduce((acc, current)=> {
+    return acc + current;
+  }, 0);
 
-  return filtered;
+  return filteredNumbers;
 
 }
 
