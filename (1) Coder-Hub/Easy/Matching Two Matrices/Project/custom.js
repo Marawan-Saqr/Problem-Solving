@@ -1,14 +1,10 @@
 function match_arrays(array1, array2) {
 
-  if (array1.length !== array2.length) {
-    return false;
-  }
+  let sortedOne = array1.sort();
+  let sortedTwo = array2.sort();
 
-  array1.sort();
-  array2.sort();
-
-  for (let i = 0; i < array1.length; i++) {
-    if (array1[i] !== array2[i]) {
+  for (let i = 0; i < sortedOne.length; i++) {
+    if (sortedOne[i] !== sortedTwo[i]) {
       return false;
     }
   }

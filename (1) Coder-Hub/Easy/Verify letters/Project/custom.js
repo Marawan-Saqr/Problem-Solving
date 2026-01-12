@@ -1,9 +1,9 @@
 function allSameCase(word) {
 
-  let lower = word.toLowerCase();
   let upper = word.toUpperCase();
+  let lower = word.toLowerCase();
 
-  if (word === lower || word === upper) {
+  if (word === upper || word === lower) {
     return true;
   } else {
     return false;
@@ -12,4 +12,4 @@ function allSameCase(word) {
 }
 
 
-console.log(allSameCase("Hello"));
+console.log(allSameCase("HI"));

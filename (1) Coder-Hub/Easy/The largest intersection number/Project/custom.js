@@ -1,17 +1,18 @@
 function getBiggestShared(a, b) {
 
-  let result = a[0];
-
+  let firstNumber = a[0];  // 1
   for (let i = 0; i < a.length; i++) {
     for (let j = 0; j < b.length; j++) {
-      if (a[i] === b[j] && a[i] > result) {
-        result = a[i];
+      if (a[i] === b[j]) {
+        if (a[i] > firstNumber) {
+          firstNumber = a[i];
+        }
       }
     }
   }
 
-  return result;
+  return firstNumber;
 
 }
 
-console.log(getBiggestShared([90, 95], [90, 95]));
+console.log(getBiggestShared([10, 2, 3, 12, 3], [54, 12, 33, 1]));
