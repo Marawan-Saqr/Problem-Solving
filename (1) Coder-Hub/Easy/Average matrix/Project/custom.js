@@ -1,10 +1,10 @@
 function get_mean(arr) {
 
-  let result = arr.reduce((acc, current)=> {
+  let total = arr.reduce((acc, current)=> {
     return acc + current;
   }, 0);
 
-  return result / arr.length;
+  return total / arr.length;
 
 }
 

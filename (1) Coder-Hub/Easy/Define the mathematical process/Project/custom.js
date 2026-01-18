@@ -1,4 +1,5 @@
 function operation(num1, num2) {
+
   if (num1 / num2 === 24) {
     return "divided";
   } else if (num1 * num2 === 24) {
@@ -10,6 +11,7 @@ function operation(num1, num2) {
   } else {
     return "None";
   }
+
 }
 
 
