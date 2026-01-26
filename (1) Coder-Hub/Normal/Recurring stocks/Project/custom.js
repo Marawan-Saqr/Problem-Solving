@@ -1,10 +1,10 @@
 function arrowDuplicates(word) {
 
-  let small = word.toLowerCase();
-
+  let lowerAll = word.toLowerCase();
   let result = "";
-  for (let i = 0; i < small.length; i++) {
-    if (small.indexOf(small[i]) === small.lastIndexOf(small[i])) {
+
+  for (let i = 0; i < lowerAll.length; i++) {
+    if (lowerAll.indexOf(lowerAll[i]) === lowerAll.lastIndexOf(lowerAll[i])) {
       result += ">";
     } else {
       result += "<";
@@ -16,4 +16,4 @@ function arrowDuplicates(word) {
 }
 
 
-console.log(arrowDuplicates("Bb"));
+console.log(arrowDuplicates("SAFCSP"));
