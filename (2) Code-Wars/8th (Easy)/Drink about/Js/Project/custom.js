@@ -10,4 +10,4 @@ function peopleWithAgeDrink(old) {
   }
 }
 
-console.log(peopleWithAgeDrink(17));
+console.log(peopleWithAgeDrink(21));

@@ -1,15 +1,14 @@
 function isPalindrome(x) {
 
-  const origin = x.split("").join("").toLowerCase();
-  const reverse = x.split("").reverse().join("").toLowerCase();
-
-  if (origin === reverse) {
-    return true;
-  } else {
-    return false;
+  let lowerAll = x.toLowerCase();
+  let result = "";
+  for (let i = lowerAll.length - 1; i >= 0; i--) {
+    result += lowerAll[i];
   }
+
+  return result === lowerAll ? true : false;
 
 }
 
 
-console.log(isPalindrome("hello"));
+console.log(isPalindrome("Abba"));

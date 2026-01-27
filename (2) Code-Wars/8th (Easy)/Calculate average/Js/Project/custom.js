@@ -4,11 +4,11 @@ function findAverage(array) {
     return 0;
   }
 
-  let result = array.reduce((acc, current)=> {
+  let total = array.reduce((acc, current)=> {
     return acc + current;
   }, 0);
 
-  return result / array.length;
+  return total / array.length;
 
 }
 
