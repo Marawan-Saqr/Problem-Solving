@@ -1,17 +1,15 @@
-function whoIsPaying(name){
+function whoIsPaying(name) {
 
-  let newArray = [];
-
-  if (name.length <= 2) {
-    newArray.push(name);
-  } else if (name.length > 2) {
-    newArray.push(name, name[0] + name[1]);
+  if (name.length === 0) {
+    return [""];
+  } else if (name.length <= 2) {
+    return [name];
+  } else {
+    return [name, name.slice(0, 2)];
   }
-
-  return newArray;
 
 }
 
 
 
-console.log(whoIsPaying("Mexico"));
+console.log(whoIsPaying(""));

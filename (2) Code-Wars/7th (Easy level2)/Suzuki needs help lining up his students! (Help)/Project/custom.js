@@ -12,4 +12,5 @@ function lineupStudents(students) {
 
 }
 
+
 console.log(lineupStudents("Tadashi Takahiro Takao Takashi Takayuki Takehiko Takeo Takeshi Takeshi"));

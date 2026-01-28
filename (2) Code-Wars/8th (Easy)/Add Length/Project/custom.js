@@ -1,10 +1,9 @@
 function addLength(str) {
 
+  let splited = str.split(" ");  // ['apple', 'ban']
   let result = [];
-  let splited = str.split(" ");
-
   for (let i = 0; i < splited.length; i++) {
-    result.push(splited[i] + " " + splited[i].length)
+    result.push(`${splited[i]} ${splited[i].length}`);
   }
 
   return result;
