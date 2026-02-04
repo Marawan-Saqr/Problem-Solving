@@ -1,6 +1,9 @@
 function solution(a, b) {
 
-  if (a.length > b.length) {
+  let firstLength = a.length;
+  let secondLength = b.length;
+
+  if (firstLength > secondLength) {
     return `${b}${a}${b}`;
   } else {
     return `${a}${b}${a}`;

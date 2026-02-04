@@ -4,8 +4,9 @@ function noBoringZeros(n) {
     return 0;
   }
 
-  let converted = n.toString(); // "1450"
-  let splited = converted.split(""); // ["1", "4", "5", "0"]
+  let stringed = n.toString();        // 1450
+  let splited = stringed.split("");
+
   for (let i = splited.length - 1; i >= 0; i--) {
     if (splited[i] === "0") {
       splited.pop();
@@ -19,4 +20,4 @@ function noBoringZeros(n) {
 
 }
 
-console.log(noBoringZeros(0));
+console.log(noBoringZeros(1450));

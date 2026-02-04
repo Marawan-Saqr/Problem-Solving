@@ -1,12 +1,15 @@
 function drawStairs(n) {
 
-  let result = [];
-  
+  let result = "";
   for (let i = 0; i < n; i++) {
-    result[i] = `${' '.repeat(i)}I`;
+    result += " ".repeat(i) + "I";
+    if (i < n - 1) {
+      result += "\n";
+    }
   }
-  
-  return result.join('\n');
+
+  return result;
+
 }
 
 console.log(drawStairs(3));

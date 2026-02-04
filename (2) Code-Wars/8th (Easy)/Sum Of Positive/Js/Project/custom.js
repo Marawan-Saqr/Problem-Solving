@@ -1,11 +1,12 @@
 function positiveSum(arr) {
 
-  let result = arr.filter((element)=> {
+  let positivesOnly = arr.filter((element)=> {
     return element > 0;
-  }).reduce((acc, current)=> {
+  });
+
+  let result = positivesOnly.reduce((acc, current)=> {
     return acc + current;
   }, 0);
-
 
   return result;
 

@@ -1,13 +1,13 @@
 function digitize(n) {
 
   let stringed = n.toString();
-  let splited = stringed.split("");
+  let splited = stringed.split("").reverse();
 
-  let mapped = splited.map((element)=> {
-    return Number(element);
-  })
+  let convertToNumbers = splited.map((element)=> {
+    return parseInt(element);
+  });
 
-  return mapped.reverse();
+  return convertToNumbers;
 
 }
 
