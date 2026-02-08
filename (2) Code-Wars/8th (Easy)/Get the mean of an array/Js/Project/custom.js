@@ -1,10 +1,11 @@
 function getAverage(marks){
 
-  let summed = marks.reduce((acc, current)=> {
+  let average = marks.reduce((acc, current)=> {
     return acc + current;
   }, 0);
 
-  return Math.floor(summed / marks.length);
+  let result = average / marks.length;
+  return Math.floor(result);
 
 }
 

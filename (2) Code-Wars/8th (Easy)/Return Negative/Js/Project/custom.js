@@ -1,11 +1,11 @@
 function makeNegative(num) {
 
   if (num < 0) {
-    return num;
+    return num * 1;
   } else {
-    return -num;
+    return num * -1;
   }
 
 }
 
-console.log(makeNegative(9));
+console.log(makeNegative(-1));
