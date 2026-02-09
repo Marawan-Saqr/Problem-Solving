@@ -1,5 +1,5 @@
-function square(argument) {
-  return Math.pow(argument, 2);
+function square(element) {
+  return Math.pow(element, 2);
 }
 
 

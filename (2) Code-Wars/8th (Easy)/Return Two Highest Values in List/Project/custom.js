@@ -2,14 +2,16 @@ function twoHighest(arr) {
 
   if (arr.length === 0) {
     return [];
-  } else if (arr.length <= 1) {
+  } else if (arr.length === 1) {
     return arr;
   }
 
+  let sorted = arr.sort((a, b)=> b - a);    // [20, 20, 17, 15]
+  let uniqueValues = [...new Set(sorted)];  // [20, 17, 15]
 
-  let uniqueValues = [...new Set(arr)];
-  const [valueOne, valueTwo] = uniqueValues.sort((a, b)=> b - a);
-  return [valueOne, valueTwo];
+  let [number1, number2] = uniqueValues;
+
+  return [number1, number2];
 
 }
 

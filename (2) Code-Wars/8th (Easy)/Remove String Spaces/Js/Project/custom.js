@@ -1,6 +1,10 @@
 function noSpace(x) {
-  let splited = x.split(" ").join("");
-  return splited;
+  let result = x.split(" ").filter((element)=> {
+    return element !== "";
+  });
+
+  return result.join("");
+
 }
 
 
