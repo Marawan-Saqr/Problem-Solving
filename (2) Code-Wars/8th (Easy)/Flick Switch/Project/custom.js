@@ -1,12 +1,15 @@
 function flickSwitch(arr) {
 
-  let isFlicked = true;
   let result = [];
+  let flagSwitch = true;
+
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] === "flick") {
-      isFlicked = !isFlicked;
+      flagSwitch = !flagSwitch;
+      result.push(flagSwitch);
+    } else {
+      result.push(flagSwitch);
     }
-    result.push(isFlicked);
   }
 
   return result;
@@ -15,4 +18,4 @@ function flickSwitch(arr) {
 
 
 
-console.log(flickSwitch(['bicycle', 'jarmony', 'flick', 'sheep', 'flick']));
+console.log(flickSwitch(['codewars', 'flick', 'code', 'wars']));
