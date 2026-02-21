@@ -1,10 +1,10 @@
 function filter_list(l) {
 
-  let filterArray = l.filter((element)=> {
+  let filterItems = l.filter((element)=> {
     return typeof element === "number";
   });
 
-  return filterArray;
+  return filterItems;
 
 }
 

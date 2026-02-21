@@ -1,18 +1,20 @@
 function twoSort(s) {
 
-  let sorted = s.sort();
-  let firstElement = s[0];
-  let splited = firstElement.split("");
   let result = "";
+  let sorting = s.sort();
+  let operation = sorting[0];
 
-
-  for (let i = 0; i < splited.length; i++) {
-    result += `${splited[i]}***`
+  for (let i = 0; i < operation.length; i++) {
+    if (i !== operation.length - 1) {
+      result += operation[i];
+      result += "***";
+    } else {
+      result += operation[i];
+    }
   }
 
-  result = result.slice(0, -3);
   return result;
 
 }
 
-console.log(twoSort(["bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps"]));
+console.log(twoSort(["Bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps"]));

@@ -1,13 +1,12 @@
 function sum(numbers) {
 
-  let sumNumbers = numbers.reduce((acc, current)=> {
+  let result = numbers.reduce((acc, current)=> {
     return acc + current;
   }, 0);
 
-  return sumNumbers;
+  return result;
 
 }
-
 
 
 
