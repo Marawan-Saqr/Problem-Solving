@@ -1,11 +1,11 @@
 function word_length(arr) {
 
-  let newResult = [];
+  let result = [];
   for (let i = 0; i < arr.length; i++) {
-    newResult.push(arr[i].length);
+    result.push(arr[i].length);
   }
 
-  return newResult;
+  return result;
 
 }
 

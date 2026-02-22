@@ -1,8 +1,7 @@
 function getAge(inputString){
 
-  let convertAge = parseInt(inputString);
-
-  return convertAge;
+  let numberOnly = parseInt(inputString);
+  return numberOnly;
 
 }
 
