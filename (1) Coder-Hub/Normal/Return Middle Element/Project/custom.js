@@ -1,12 +1,12 @@
 function middle_char(word) {
 
-  let lengthOfWord = word.length;
-  let midChar = Math.floor(lengthOfWord / 2);
+  let len = word.length;
+  let mid = Math.floor(len / 2);
 
-  if (lengthOfWord % 2 === 0) {
-    return word[midChar - 1] + word[midChar];
+  if (len % 2 !== 0) {
+    return word[mid];
   } else {
-    return word[midChar];
+    return word[mid - 1] + word[mid];
   }
 
 }

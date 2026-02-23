@@ -1,11 +1,8 @@
 function unique(arr) {
 
-  let result = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr.indexOf(arr[i] === arr.lastIndexOf(arr[i]))) {
-      result.push(arr[i]);
-    }
-  }
+  let result = arr.filter((element)=> {
+    return arr.indexOf(element) === arr.lastIndexOf(element);
+  });
 
   return result;
 
