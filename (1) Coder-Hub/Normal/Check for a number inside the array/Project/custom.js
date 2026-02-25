@@ -1,10 +1,6 @@
 function find_element(elements_array, element) {
 
-  if (elements_array.includes(element)) {
-    return true;
-  } else {
-    return false;
-  }
+  return elements_array.includes(element) ? true : false;
 
 }
 

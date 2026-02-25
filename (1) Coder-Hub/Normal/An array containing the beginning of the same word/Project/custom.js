@@ -1,19 +1,17 @@
 function find_prefix(words, text) {
 
-  let newArray = [];
-  let capitalText = text.toLowerCase();
-
+  let lowerText = text.toLowerCase();
+  let result = [];
   for (let i = 0; i < words.length; i++) {
-    let check = words[i].toLowerCase();
-    if (check.startsWith(capitalText)) {
-      newArray.push(words[i]);
+    if (words[i].toLowerCase().startsWith(lowerText)) {
+      result.push(words[i]);
     }
   }
 
-  if (newArray.length === 0) {
+  if (result.length === 0) {
     return ['No matches found'];
   } else {
-    return newArray;
+    return result;
   }
 
 }

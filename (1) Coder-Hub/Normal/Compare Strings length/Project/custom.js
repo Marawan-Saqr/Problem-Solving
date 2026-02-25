@@ -1,8 +1,6 @@
 function str_len_comparison(words) {
 
-  if (words.length === 0) {
-    return words;
-  } else if (words.length === 1) {
+  if (words.length === 0 || words.length === 1) {
     return false;
   }
 
