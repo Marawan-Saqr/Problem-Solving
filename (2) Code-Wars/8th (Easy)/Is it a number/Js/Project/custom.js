@@ -1,5 +1,4 @@
 function isDigit(s) {
-
   return !isNaN(s) && s.trim() !== '';
 }
 
