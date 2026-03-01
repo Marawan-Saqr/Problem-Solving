@@ -3,9 +3,8 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   let expected = mpg * fuelLeft;
   if (expected >= distanceToPump) {
       return true;
-    }
-  else {
-    return false;
+    } else {
+      return false;
   }
 
 }

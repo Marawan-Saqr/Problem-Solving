@@ -1,10 +1,14 @@
 String.prototype.isUpperCase = function() {
-  for (let i = 0; i < this.length; i++) {
-    if (this[i].toLowerCase() !== this[i].toUpperCase() && this[i] === this[i].toLowerCase()) {
+
+  let noSpaces = this.replace(/[^a-zA-Z0-9]/g, "");
+  for (let i = 0; i < noSpaces.length; i++) {
+    if (noSpaces[i] === noSpaces[i].toLowerCase()) {
       return false;
     }
   }
+
   return true;
+
 }
 
-console.log("HELLO I AM DONALD".isUpperCase()); // Should print: true
+console.log("BOB WALKS HIS DOG EVERY DAY.".isUpperCase());

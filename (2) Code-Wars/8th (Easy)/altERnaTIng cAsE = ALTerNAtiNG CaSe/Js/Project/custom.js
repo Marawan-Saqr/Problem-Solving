@@ -1,14 +1,15 @@
 String.prototype.toAlternatingCase = function () {
 
-  let result = this.split("").map(function(element) {
-    if (element === element.toUpperCase()) {
-      return element.toLowerCase();
+  let result = "";
+  for (let i = 0; i < this.length; i++) {
+    if (this[i] === this[i].toUpperCase()) {
+      result += this[i].toLowerCase();
     } else {
-      return element.toUpperCase();
+      result += this[i].toUpperCase();
     }
-  })
+  }
 
-  return result.join("");
+  return result;
 
 }
 
