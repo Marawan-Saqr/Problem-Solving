@@ -1,14 +1,18 @@
 function abbrevName(name){
 
-  let newResult = "";
-  let splitedWord = name.split(" ");
-  for (let i = 0; i < splitedWord.length; i++) {
-    newResult += `${splitedWord[i][0]}.`;
+  let result = "";
+  let splited = name.split(" ");
+
+  for (let i = 0; i < splited.length; i++) {
+    if (i === splited.length - 1) {
+      result += splited[i][0].toUpperCase();
+    } else {
+      result += splited[i][0].toUpperCase();
+      result += ".";
+    }
   }
 
-  let resultSplited = newResult.split("");
-  resultSplited.pop();
-  return resultSplited.join("").toUpperCase();
+  return result;
 
 }
 
