@@ -1,17 +1,8 @@
 function sumStr(a, b) {
-  if (a === "") {
-    a = "0";
-  }
-  if (b === "") {
-    b = "0";
-  }
 
-  let firstElement = parseInt(a);
-  let secondElement = parseInt(b);
-  let result = firstElement + secondElement;
-  let final = result.toString();
-  
-  return final;
+  let result = Number(a) + Number(b);
+  return result.toString();
+
 }
 
-console.log(sumStr("4", "5"))
+console.log(sumStr("4", "5"));
