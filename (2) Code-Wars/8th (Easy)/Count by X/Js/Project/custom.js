@@ -10,4 +10,4 @@ function countBy(x, n) {
 
 }
 
-console.log(countBy(1, 10));
+console.log(countBy(2, 5));
