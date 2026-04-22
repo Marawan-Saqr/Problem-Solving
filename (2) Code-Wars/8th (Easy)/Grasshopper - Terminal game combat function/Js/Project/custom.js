@@ -1,13 +1,12 @@
 function combat(health, damage) {
 
-  let currentHealth = health - damage;
-
-  if (currentHealth <= 0) {
+  let result = health - damage;
+  if (result <= 0) {
     return 0;
   } else {
-    return currentHealth;
+    return result;
   }
 
 }
 
-console.log(combat(92, 8));
+console.log(combat(20, 30));
