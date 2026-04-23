@@ -1,8 +1,7 @@
 var summation = function (num) {
 
   let result = 0;
-
-  for (let i = 1; i <= num; i++) {
+  for (let i = 0; i <= num; i++) {
     result += i;
   }
 
@@ -10,4 +9,4 @@ var summation = function (num) {
 
 }
 
-console.log(summation(8));
+console.log(summation(5));

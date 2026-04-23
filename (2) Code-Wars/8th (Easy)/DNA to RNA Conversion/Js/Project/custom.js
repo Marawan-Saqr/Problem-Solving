@@ -1,38 +1,17 @@
-function correct(string) {
+function DNAtoRNA(dna) {
 
-  let result = string.split("").map(function(e) {
-    if (e === "0") {
-      return "O";
-    } else if (e === "5") {
-      return "S";
-    } else if (e === "1") {
-      return "I";
+  let result = "";
+  for (let i = 0; i < dna.length; i++) {
+    if (dna[i] === "T") {
+      result += "U";
     } else {
-      return e;
-    }
-  })
-
-  return result.join("");
-
-}
-
-console.log(correct("L0ND0N"));
-
-///////////////////////////Another Method//////////////////////////////////////
-function correct(string){
-  let updatedString = "";
-  for (let i = 0; i < string.length; i++) {
-    if (string[i].includes("0")) {
-      updatedString += string[i].replace("0", "O");
-    } else if (string[i].includes("5")) {
-      updatedString += string[i].replace("5", "S");
-    } else if (string[i].includes("1")) {
-      updatedString += string[i].replace("1", "I");
-    } else {
-      updatedString += string[i];
+      result += dna[i];
     }
   }
-  return updatedString;
+
+  return result;
+
 }
 
-console.log(correct("L0ND0N"));
+
+console.log(DNAtoRNA("GCAT"));
