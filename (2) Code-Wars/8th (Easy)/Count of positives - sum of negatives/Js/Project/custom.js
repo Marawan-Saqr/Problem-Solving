@@ -4,18 +4,28 @@ function countPositivesSumNegatives(input) {
     return [];
   }
 
-  let numberOfPositives = 0;
-  let sumOfNegatives = 0;
+  let positiveCounter = 0;
+  let negativeSum = 0;
+  let result = [];
 
-  for (let i = 0; i < input.length; i++) {
-    if (input[i] > 0) {
-      numberOfPositives++;
-    } else if (input[i] < 0) {
-      sumOfNegatives += input[i];
+  let sorted = input.sort((a, b)=> {
+    if (a >= 0 && b < 0) {
+      return -1;
+    } else if (a < 0 && b >= 0) {
+      return 1;
+    }
+  });
+
+  for (let i = 0; i < sorted.length; i++) {
+    if (sorted[i] > 0) {
+      positiveCounter++;
+    } else {
+      negativeSum += sorted[i];
     }
   }
 
-  return [numberOfPositives, sumOfNegatives];
+  result.push(positiveCounter, negativeSum);
+  return result;
 
 }
 

@@ -1,11 +1,9 @@
 const flip=(d, a)=>{
 
-  if (d === 'R') {
-    a.sort((a, b) => a - b);
-    return a;
-  } else if (d === 'L') {
-    a.sort((a, b) => b - a);
-    return a;
+  if (d === "L") {
+    return a.sort((a, b)=> b - a);
+  } else {
+    return a.sort((a, b)=> a - b);
   }
 
 }
