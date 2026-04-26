@@ -1,12 +1,8 @@
 function divisibleBy(numbers, divisor){
 
-  let result = [];
-
-  for (let i = 0; i < numbers.length; i++) {
-    if (numbers[i] % divisor === 0) {
-      result.push(numbers[i]);
-    }
-  }
+  let result = numbers.filter((element)=> {
+    return element % divisor === 0;
+  });
 
   return result;
 

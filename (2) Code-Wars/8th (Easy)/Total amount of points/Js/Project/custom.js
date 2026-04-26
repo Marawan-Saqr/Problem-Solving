@@ -1,18 +1,26 @@
 function points(games) {
 
-  let result = 0;
+  let firstTeamPoints = 0;
+  let secondTeamPoints = 0;
 
   for (let i = 0; i < games.length; i++) {
-    if (games[i][0] < games[i][2]) {
-      result += 0;
-    } else if (games[i][0] > games[i][2]) {
-      result += 3;
-    } else if (games[i][0] === games[i][2]) {
-      result += 1;
+    let arrayOfNumbers = [];
+    for (let j = 0; j < games[i].length; j++) {
+      if (!isNaN(games[i][j]) && games[i][j].trim() !== '') {
+        arrayOfNumbers.push(games[i][j]);
+      }
+    }
+    if (arrayOfNumbers[0] > arrayOfNumbers[1]) {
+      firstTeamPoints += 3;
+    } else if (arrayOfNumbers[0] < arrayOfNumbers[1]) {
+      secondTeamPoints += 3;
+    } else {
+      firstTeamPoints++;
+      secondTeamPoints++;
     }
   }
 
-  return result;
+  return firstTeamPoints;
 
 }
 

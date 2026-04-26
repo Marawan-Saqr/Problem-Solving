@@ -1,4 +1,5 @@
 function rentalCarCost(d) {
+
   let cost = d * 40;
   if (d < 3) {
     return cost;
@@ -9,6 +10,7 @@ function rentalCarCost(d) {
   else if (d >= 3) {
     return cost - 20;
   }
+
 }
 
 console.log(rentalCarCost(3));

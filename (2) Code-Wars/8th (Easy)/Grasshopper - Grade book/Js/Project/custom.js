@@ -1,24 +1,24 @@
 function getGrade (s1, s2, s3) {
 
   let gradesArray = [];
-  gradesArray.push(s1);
-  gradesArray.push(s2);
-  gradesArray.push(s3);
+  gradesArray.push(s1, s2, s3);
 
-  let average = (s1 + s2 + s3) / gradesArray.length;
+  let sum = gradesArray.reduce((acc, current)=> {
+    return acc + current;
+  }, 0);
 
-  console.log(average)
+  let averageResult = Math.round(sum / gradesArray.length);
 
-  if (average >= 90 && average <= 100) {
-    return 'A';
-  } else if (average >= 80 && average < 90) {
-    return 'B';
-  } else if (average >= 70 && average < 80) {
-    return 'C';
-  } else if (average >= 60 && average < 70) {
-    return 'D';
-  } else {
-    return 'F';
+  if (averageResult >= 90 && averageResult <= 100) {
+    return "A";
+  } else if (averageResult >= 80 && averageResult <= 90 ) {
+    return "B";
+  } else if (averageResult >= 70 && averageResult <= 80) {
+    return "C";
+  } else if (averageResult >= 60 && averageResult <= 70) {
+    return "D";
+  } else if (averageResult >= 0 && averageResult < 60) {
+    return "F";
   }
 
 }

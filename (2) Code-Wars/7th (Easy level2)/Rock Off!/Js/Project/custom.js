@@ -7,9 +7,6 @@ function solve(a, b) {
       alicePoints++;
     } else if (a[i] < b[i]) {
       bobPoints++;
-    } else {
-      alicePoints;
-      bobPoints;
     }
   }
 
