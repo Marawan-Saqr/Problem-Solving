@@ -5,12 +5,15 @@ function removeSmallest(numbers) {
   }
 
   let minNumber = Math.min(...numbers);
-  let minIndex = numbers.indexOf(minNumber);
-  let result = [...numbers];
+  let index = numbers.indexOf(minNumber);
 
-  result.splice(minIndex, 1);
+
+  let result = numbers.filter((element, i)=> {
+    return i !== index;
+  });
+
   return result;
 
 }
 
-console.log(removeSmallest([2, 2, 1, 2, 1]));
+console.log(removeSmallest([96, 288, 86, 81, 153, 102, 324, 341, 248, 286, 36, 11, 33, 17, 198, 193, 354]));

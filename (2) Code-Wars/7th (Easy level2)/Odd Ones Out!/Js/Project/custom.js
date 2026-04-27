@@ -1,22 +1,19 @@
 function oddOnesOut(nums) {
 
   let result = [];
-
   for (let i = 0; i < nums.length; i++) {
-    let counter = 0;
+    let count = 0;
     for (let j = 0; j < nums.length; j++) {
       if (nums[i] === nums[j]) {
-        counter++;
+        count++;
       }
     }
-    if (counter % 2 === 0) {
+    if (count % 2 === 0) {
       result.push(nums[i]);
     }
   }
 
-
   return result;
-
 
 }
 

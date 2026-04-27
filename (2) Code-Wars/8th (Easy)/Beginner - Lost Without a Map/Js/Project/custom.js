@@ -1,10 +1,8 @@
 function grow(x) {
 
-  let result = 1;
-
-  for (let i = 0; i < x.length; i++) {
-    result *= x[i];
-  }
+  let result = x.reduce((acc, current)=> {
+    return acc * current;
+  }, 1);
 
   return result;
 
