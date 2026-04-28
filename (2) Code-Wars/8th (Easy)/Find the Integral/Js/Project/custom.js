@@ -1,8 +1,8 @@
 function integrate(coefficient, exponent) {
 
-  let addExponent = exponent + 1;
-  let integralFormula = coefficient / addExponent;
-  return integralFormula.toString() + "x" + "^" + addExponent.toString();
+  let newExponent = exponent + 1;
+  let newCofficient = coefficient / newExponent;
+  return `${newCofficient}x^${newExponent}`;
 
 }
 
