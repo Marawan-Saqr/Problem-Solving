@@ -1,8 +1,17 @@
 function squareOrSquareRoot(array) {
-  return array.map(x => {
-    const r = Math.sqrt(x);
-    return (r % 1 == 0) ? r : (x*x);
-  });  
+
+  let result = array.map((element)=> {
+    let root = Math.sqrt(element);
+    let checkRoot = Number.isInteger(root);
+    if (checkRoot) {
+      return root;
+    } else {
+      return Math.pow(element, 2);
+    }
+  });
+
+  return result;
+
 }
 
 console.log(squareOrSquareRoot([4, 3, 9, 7, 2, 1]));

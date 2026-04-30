@@ -1,18 +1,17 @@
 function repeats(arr){
 
-  let result = [];
-
+  let NumbersThatShowOneTime = [];
   for (let i = 0; i < arr.length; i++) {
     if (arr.indexOf(arr[i]) === arr.lastIndexOf(arr[i])) {
-      result.push(arr[i]);
+      NumbersThatShowOneTime.push(arr[i]);
     }
   }
 
-  let finalResult = result.reduce((acc, current)=> {
+  let result = NumbersThatShowOneTime.reduce((acc, current)=> {
     return acc + current;
-  })
+  }, 0);
 
-  return finalResult;
+  return result;
 
 }
 
