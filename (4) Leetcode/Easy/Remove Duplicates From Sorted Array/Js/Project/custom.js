@@ -1,9 +1,12 @@
 function removeDuplicates(nums) {
-  let uniqueElements = Array.from(new Set(nums));
-  for (let i = 0; i < uniqueElements.length; i++) {
-    nums[i] = uniqueElements[i];
+
+  let convertToArray = [...new Set(nums)];
+  for (let i = 0; i < convertToArray.length; i++) {
+    nums[i] = convertToArray[i];
   }
-  return uniqueElements.length;
+
+  return convertToArray.length;
+
 }
 
 console.log(removeDuplicates([1, 1, 2, 3, 5]));

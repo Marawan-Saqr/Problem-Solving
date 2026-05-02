@@ -1,23 +1,19 @@
 let isPalindrome = function(x) {
 
-  let converted = x.toString();
-  let result = "";
-  let secondResult = "";
+  let stringedNumber = x.toString();
 
-  for (let i = 0; i < converted.length; i++) {
-    result += converted[i];
+  let start = "";
+  for (let i = 0; i < stringedNumber.length; i++) {
+    start += stringedNumber[i];
   }
 
-  for (let i = converted.length - 1; i >= 0; i--) {
-    secondResult += converted[i];
+  let end = "";
+  for (let i = stringedNumber.length - 1; i >= 0; i--) {
+    end += stringedNumber[i];
   }
 
-  if (result === secondResult) {
-    return true;
-  } else {
-    return false;
-  }
 
+  return start === end ? true : false;
 
 }
 
