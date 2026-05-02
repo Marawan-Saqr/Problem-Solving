@@ -5,15 +5,16 @@ function wordValue(array) {
     let sum = 0;
     for (let j = 0; j < array[i].length; j++) {
       if (array[i][j] !== " ") {
-        sum += (array[i][j].charCodeAt(0) - 96);
+        sum += array[i][j].charCodeAt(0) - 97 + 1;
       }
     }
     result.push(sum * (i + 1));
   }
+
   return result;
 
 }
 
 
 
-console.log(wordValue(["codewar s","abc","xyz"]));
+console.log(wordValue(["codewar s", "abc", "xyz"]));
