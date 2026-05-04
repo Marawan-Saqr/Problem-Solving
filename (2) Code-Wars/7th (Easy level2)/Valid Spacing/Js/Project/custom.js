@@ -6,9 +6,11 @@ function validSpacing(s) {
     }
   }
 
-  if (s[0] === ' ') {
+  if (s[0] === " ") {
     return false;
   } else if (s[s.length - 1] === " ") {
+    return false;
+  } else if (s === " ") {
     return false;
   } else {
     return true;
@@ -16,4 +18,4 @@ function validSpacing(s) {
 
 }
 
-console.log(validSpacing("hello world"));
+console.log(validSpacing("Hello"));

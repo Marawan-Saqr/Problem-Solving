@@ -8,4 +8,4 @@ var strStr = function(haystack, needle) {
 
 }
 
-console.log(strStr("butsad", "sad"));
+console.log(strStr("sadbutsad", "sad"));
