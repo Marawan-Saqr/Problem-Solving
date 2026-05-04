@@ -1,8 +1,5 @@
 var mySqrt = function(x) {
-
-  let sqrted = Math.sqrt(x);
-  return Math.floor(sqrted);
-
+  return Math.floor(Math.sqrt(x));
 }
 
 console.log(mySqrt(8));
