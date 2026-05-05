@@ -1,14 +1,13 @@
 var runningSum = function(nums) {
 
-  let result = 0;
-  let finalResult = [];
-
+  let result = [];
+  let sum = 0;
   for (let i = 0; i < nums.length; i++) {
-    result += nums[i];
-    finalResult.push(result);
+    sum += nums[i];
+    result.push(sum);
   }
 
-  return finalResult;
+  return result;
 
 }
 

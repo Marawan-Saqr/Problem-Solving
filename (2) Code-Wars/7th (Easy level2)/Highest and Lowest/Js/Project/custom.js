@@ -1,20 +1,16 @@
 function highAndLow(numbers) {
+
   let splited = numbers.split(" ");
-  let newArray = splited.map(Number);
 
-  let smallestNumber = newArray[0];
-  let highestNumber = newArray[0];
+  let convertToNumbers = splited.map((element)=> {
+    return Number(element);
+  });
 
-  for (let i = 1; i < newArray.length; i++) {
-    if (smallestNumber > newArray[i]) {
-      smallestNumber = newArray[i];
-    }
-    if (highestNumber < newArray[i]) {
-      highestNumber = newArray[i];
-    }
-  }
+  let maxNumber = Math.max(...convertToNumbers);
+  let minNumber = Math.min(...convertToNumbers);
 
-  return highestNumber + " " + smallestNumber;
+  return `${maxNumber.toString()} ${minNumber.toString()}`;
+
 }
 
 console.log(highAndLow("1 2 3 4 5"));

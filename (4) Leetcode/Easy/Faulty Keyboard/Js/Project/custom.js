@@ -4,7 +4,7 @@ var finalString = function(s) {
   let splited = s.split("");
 
   for (let i = 0; i < splited.length; i++) {
-    if (splited[i] !== "i" ) {
+    if (splited[i] !== "i") {
       result.push(splited[i]);
     } else {
       result.reverse();
