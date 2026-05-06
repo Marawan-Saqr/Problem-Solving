@@ -1,12 +1,14 @@
 function solution(str, ending) {
 
-  if (str.endsWith(ending)) {
-    return true;
+  for (let i = 0; i < ending.length; i++) {
+    if (str[str.length - 1 - i] !== ending[ending.length - 1 - i]) {
+      return false;
+    }
   }
 
-  return false;
+  return true;
 
 }
 
 
-console.log(solution("abcde", "cde"));
+console.log(solution("strden", "sdsds"));
