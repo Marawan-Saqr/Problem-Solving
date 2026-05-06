@@ -1,11 +1,9 @@
 function solve(arr) {
 
   let result = [];
-  let lowering = arr.map(word => word.toLowerCase());
-  let counter = 0;
-
+  let lowering = arr.map((element)=> element.toLowerCase());
   for (let i = 0; i < lowering.length; i++) {
-    counter = 0;
+    let counter = 0;
     for (let j = 0; j < lowering[i].length; j++) {
       if (j === lowering[i][j].charCodeAt(0) - 97) {
         counter++;
@@ -19,4 +17,4 @@ function solve(arr) {
 }
 
 
-console.log(solve(["abode", "ABc", "xyzD"]));
+console.log(solve(["abode", "abc", "xyzd"]));
