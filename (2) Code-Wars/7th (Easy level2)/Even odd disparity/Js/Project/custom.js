@@ -1,20 +1,22 @@
 function solve(a){
 
-  let evenCount = 0;
-  let oddCount = 0;
-  let result = 0;
+  let numbersOnly = a.filter((element)=> {
+    return typeof element === "number";
+  });
 
-  for (let i = 0; i < a.length; i++) {
-    if (typeof a[i] === "number" && a[i] % 2 === 0) {
-      evenCount++;
-    } else if (typeof a[i] === "number" && a[i] % 2 !== 0) {
-      oddCount++;
+  let counterEven = 0;
+  let counterOdd = 0;
+
+  for (let i = 0; i < numbersOnly.length; i++) {
+    if (numbersOnly[i] % 2 === 0) {
+      counterEven++;
+    } else {
+      counterOdd++;
     }
   }
 
-  result = evenCount - oddCount;
-  return result;
+  return counterEven - counterOdd;
 
 }
 
-console.log(solve([5, 15, 16, 10, 6, 4, 16, 't', 13, 'n', 14, 'k', 'n', 0, 'q', 'd', 7, 9]));
+console.log(solve([0,1,2,3]));

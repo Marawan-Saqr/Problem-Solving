@@ -1,18 +1,11 @@
 function evenNumbers(array, number) {
 
-  let result = [];
+  let result = array.filter((element)=> {
+    return element % 2 === 0;
+  });
 
-  for (let i = array.length - 1; i >= 0; i--) {
-    if (array[i] % 2 === 0) {
-      result.push(array[i]);
-      if (result.length === number) {
-        break;
-      }
-    }
-  }
-
-  return result.reverse();
+  return result.slice(-number);
 
 }
 
-console.log(evenNumbers([6, -25, 3, 7, 5, 5, 7, -3, 23], 1));
+console.log(evenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9], 3));

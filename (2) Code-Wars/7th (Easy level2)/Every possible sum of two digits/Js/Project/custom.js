@@ -1,14 +1,11 @@
 function digits(num){
 
-  let result = [];
-  let sum = 0;
-  let stringed = num.toString();
+  let arrayOfNumbers = num.toString().split("").map((element)=> Number(element));
 
-  for (let i = 0; i < stringed.length; i++) {
-    sum = 0;
-    for (let j = i + 1; j < stringed.length; j++) {
-      sum = parseInt(stringed[i]) + parseInt(stringed[j]);
-      result.push(sum);
+  let result = [];
+  for (let i = 0; i < arrayOfNumbers.length; i++) {
+    for (let j = i + 1; j < arrayOfNumbers.length; j++) {
+      result.push(arrayOfNumbers[i] + arrayOfNumbers[j]);
     }
   }
 
