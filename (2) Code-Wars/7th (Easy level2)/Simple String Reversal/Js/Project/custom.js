@@ -1,13 +1,15 @@
 function solve(str) {
 
-  let result = "";
-  for (let i = str.length - 1; i >= 0; i--) {
-    if (str[i] !== ' ') {
-      result += str[i];
-    }
+  let reversedString = str.split("").reverse().join("").replace(/\s+/g, '');
 
-    if (str[result.length] === ' ') {
-      result += ' ';
+  let result = "";
+  let j = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === " ") {
+      result += " ";
+    } else {
+      result += reversedString[j];
+      j++;
     }
   }
 
@@ -15,4 +17,4 @@ function solve(str) {
 
 }
 
-console.log(solve("our code"));
+console.log(solve("i love codewars"));

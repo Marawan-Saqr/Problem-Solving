@@ -1,14 +1,16 @@
 function sumOfIntegersInString(s) {
 
-  let numbers = s.match(/\d+/g);
+  let numbersOnly = s.match(/\d+/g);
 
-  if (numbers === null) {
+  if (numbersOnly === null) {
     return 0;
   }
-  
-  let result = numbers.reduce((acc, current)=> {
-    return Number(acc) + Number(current);
-  }, 0)
+
+  let result = numbersOnly.map((element)=> {
+    return Number(element);
+  }).reduce((acc, current)=> {
+    return acc + current;
+  }, 0);
 
   return result;
 
@@ -16,4 +18,4 @@ function sumOfIntegersInString(s) {
 
 
 
-console.log(sumOfIntegersInString("Dogs are our best friends."));
+console.log(sumOfIntegersInString("ade approximately 1 million in gross revenue last quarter"));
