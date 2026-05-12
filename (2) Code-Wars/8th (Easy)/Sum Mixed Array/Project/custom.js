@@ -1,15 +1,10 @@
 function sumMix(x){
 
-  let convertedValue = [];
-  let result = 0;
-
-  for (let i = 0; i < x.length; i++) {
-    convertedValue.push(parseInt(x[i]));
-  }
-
-  for (let j = 0; j < convertedValue.length; j++) {
-    result += convertedValue[j];
-  }
+  let result = x.map((element)=> {
+    return Number(element);
+  }).reduce((acc, current)=> {
+    return acc + current;
+  }, 0);
 
   return result;
 
