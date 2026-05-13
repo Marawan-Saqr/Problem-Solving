@@ -6,4 +6,4 @@ function hello(name){
   }
 }
 
-console.log(hello("johN"));
+console.log(hello("joHn"));
