@@ -1,23 +1,13 @@
 function isPalindrome(line) {
 
-  let newLine;
-  newLine = line.toString();
+  let stringed = line.toString();
 
-  let first = "";
-  let end = "";
-  for (let i = 0; i < newLine.length; i++) {
-    first += newLine[i];
+  let reversed = "";
+  for (let i = stringed.length - 1; i >= 0; i--) {
+    reversed += stringed[i];
   }
 
-  for (let i = newLine.length - 1; i >= 0; i--) {
-    end += newLine[i];
-  }
-
-  if (first === end) {
-    return true;
-  } else {
-    return false;
-  }
+  return stringed === reversed;
 
 }
 
