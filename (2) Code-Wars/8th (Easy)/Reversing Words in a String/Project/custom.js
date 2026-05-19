@@ -1,11 +1,6 @@
 function reverse(string){
-
-  let splited = string.split(" ");
-
-  let reversed = splited.reverse();
-
-  return reversed.join(" ");
-
+  let result = string.split(" ").reverse().join(" ");
+  return result;
 }
 
 console.log(reverse("Hello World"));

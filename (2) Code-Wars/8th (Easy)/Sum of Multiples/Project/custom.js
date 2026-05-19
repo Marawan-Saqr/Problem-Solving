@@ -1,11 +1,10 @@
 function sumMul(n, m){
 
-  if (n <= 0 || m <= 0) {
+  if (m <= n) {
     return "INVALID";
   }
 
   let result = 0;
-
   for (let i = n; i < m; i+= n) {
     result += i;
   }
