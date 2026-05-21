@@ -1,23 +1,10 @@
 function squareDigits(num){
 
-  let converted = num.toString().split("");
+  let stringed = num.toString().split("").map((element)=> {
+    return Number(Math.pow(element, 2));
+  });
 
-
-  let numbersAgain = [];
-  if (converted) {
-    converted.map(function(e) {
-      numbersAgain.push(parseInt(e));
-    })
-  }
-
-
-  let mediumResult = [];
-  for (let i = 0; i < numbersAgain.length; i++) {
-    mediumResult.push(Math.pow(numbersAgain[i], 2).toString());
-  }
-
-  let joined = mediumResult.join("");
-  return parseInt(joined);
+  return Number(stringed.join(""));
 
 }
 
