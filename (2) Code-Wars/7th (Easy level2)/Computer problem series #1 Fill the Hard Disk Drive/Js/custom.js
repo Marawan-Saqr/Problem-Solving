@@ -1,19 +1,16 @@
 function save(sizes, hd) {
 
-  let result = 0;
+  let capacity = 0;
   let savedFiles = 0;
 
   for (let i = 0; i < sizes.length; i++) {
-    result += sizes[i];
-    if (result === hd) {
+    capacity += sizes[i];
+    if (capacity === hd) {
       savedFiles++;
       break;
-
-    } else if (result > hd) {
+    } else if (capacity > hd) {
       break;
-    }
-
-    else if (result < hd ) {
+    } else if (capacity < hd) {
       savedFiles++;
     }
   }
@@ -22,4 +19,4 @@ function save(sizes, hd) {
 
 }
 
-console.log(save([4, 8, 15, 16, 23, 42], 108));
+console.log(save([4, 4, 4, 3, 3], 11));

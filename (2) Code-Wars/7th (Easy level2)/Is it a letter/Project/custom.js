@@ -1,7 +1,6 @@
 function isItLetter(character) {
 
-  let isChar = /^[a-zA-Z]+$/.test(character);
-  return isChar;
+  return /^[a-zA-Z]+$/.test(character);
 
 }
 
