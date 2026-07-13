@@ -1,7 +1,9 @@
 function findScreenHeight(width, ratio) {
 
   let numbersOnly = ratio.match(/\d+/g);
-  let numbersConverted = numbersOnly.map(Number);
+  let numbersConverted = numbersOnly.map((element)=> {
+    return Number(element);
+  });
 
   let newRatioHeight = width * (parseInt(numbersConverted[1]) / parseInt(numbersConverted[0]));
 
