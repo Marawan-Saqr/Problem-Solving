@@ -1,16 +1,20 @@
 function findMissingNumbers(arr){
 
-  let sorted = arr.sort((a, b)=> a - b);
-  let start = sorted[0];
-  let end = sorted[sorted.length - 1];
-  let result = [];
+  let minNumber = Math.min(...arr);
+  let maxNumber = Math.max(...arr);
 
-  for (let i = start; i <= end; i++) {
-    if (!sorted.includes(i)) {
-      result.push(i);
-    }
+  let missing = [];
+  for (let i = minNumber; i <= maxNumber; i++) {
+    missing.push(i);
   }
 
+
+  let result = [];
+  for (let i = 0; i < missing.length; i++) {
+    if (!arr.includes(missing[i])) {
+      result.push(missing[i]);
+    }
+  }
 
   return result;
 
