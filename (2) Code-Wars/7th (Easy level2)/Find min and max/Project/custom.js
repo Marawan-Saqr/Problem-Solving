@@ -1,14 +1,9 @@
 function getMinMax(arr){
 
-  let min = Math.min(...arr);
-  let max = Math.max(...arr);
+  let minNumbers = Math.min(...arr);
+  let maxNumbers = Math.max(...arr);
 
-  let finalResult = [];
-
-  finalResult.push(min);
-  finalResult.push(max);
-
-  return finalResult;
+  return [minNumbers, maxNumbers];
 
 }
 
